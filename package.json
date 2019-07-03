@@ -1,0 +1,24 @@
+{
+  "name": "unplugged-hp",
+  "version": "1.0.0",
+  "description": "Kyodai Unplugged&#39;s Home Page",
+  "author": "nakagawa",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "bootstrap": "^4.1.3",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
+    "nodemon": "^1.18.9"
+  }
+}
