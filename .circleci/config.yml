@@ -32,6 +32,7 @@ jobs:
       executor: default
       working_directory: /tmp/unplugged-hp
       steps:
+          - checkout
           - attach_workspace:
               at: /tmp/unplugged-hp
           - run: cd functions && npm install
