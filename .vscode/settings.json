@@ -1,0 +1,9 @@
+{
+  "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "vetur.format.defaultFormatter.js": "prettier",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+}

@@ -35,6 +35,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
+    '@nuxtjs/markdownit',
   ],
   /*
   ** Build configuration
@@ -45,5 +46,17 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  markdownit: {
+    preset: 'default',
+    injected: true,
+    breaks: true,
+    html: true,
+    linkify: true,
+    typography: true,
+    xhtmlOut: true,
+    langPrefix: 'language-',
+    quotes: '“”‘’',
+    highlight: function (/*str, lang*/) { return ''; },
+  },
 }

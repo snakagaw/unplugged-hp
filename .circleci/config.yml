@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.6
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn generate
+
+workflows:
+  version: 2
+  test-build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
