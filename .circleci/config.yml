@@ -17,26 +17,27 @@ commands:
 jobs:
   build:
     executor: default
-    working_directory: ~/unplugged-hp
+    working_directory: /tmp/unplugged-hp
     steps:
       - checkout
       - restore_npm
       - run: yarn install
       - run: yarn generate
       - persist_to_workspace:
-          root: ~/unplugged-hp
+          root: /tmp/unplugged-hp
           paths:
             - dist
       - save_npm
   stage:
       executor: default
-      working_directory: ~/unplugged-hp
+      working_directory: /tmp/unplugged-hp
       steps:
           - attach_workspace:
-              at: ~/unplugged-hp
+              at: /tmp/unplugged-hp
+          - run: cd functions && npm install
           - run:
               name: stage to Firebase
-              command: node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
+              command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
 workflows:
   deploy:
     jobs:
