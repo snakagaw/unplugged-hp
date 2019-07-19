@@ -7,11 +7,11 @@ commands:
   restore_npm:
     steps:
       - restore_cache:
-          key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: yarn-{{ .Branch }}-{{ checksum "package.json" }}
   save_npm:
     steps:
       - save_cache:
-          key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: yarn-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - node_modules
 jobs:
