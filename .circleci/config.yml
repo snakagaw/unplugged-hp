@@ -36,6 +36,7 @@ jobs:
           - attach_workspace:
               at: /tmp/unplugged-hp
           - run: cd functions && npm install
+          - restore_npm
           - run:
               name: stage to Firebase
               command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
