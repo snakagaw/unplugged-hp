@@ -37,6 +37,7 @@ jobs:
               at: /tmp/unplugged-hp
           - run: cd functions && npm install
           - restore_npm
+          - run: yarn install
           - run:
               name: stage to Firebase
               command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
