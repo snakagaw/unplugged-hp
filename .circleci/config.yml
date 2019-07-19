@@ -1,25 +1,22 @@
-version: 2
+version: 2.1
 executors:
-  defualt:
+  default:
     docker:
       - image: circleci/node:12.6
 commands:
   restore_npm:
     steps:
       - restore_cache:
-          - yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
   save_npm:
     steps:
       - save_cache:
-        paths:
-          - node_modules
-        keys:
-          - yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
-
+          key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
 jobs:
   build:
-    executor:
-      name: default
+    executor: default
     working_directory: ~/unplugged-hp
     steps:
       - checkout
@@ -27,30 +24,28 @@ jobs:
       - run: yarn install
       - run: yarn generate
       - persist_to_workspace:
-        root: ~/unplugged-hp
-        paths:
-          - dist
+          root: ~/unplugged-hp
+          paths:
+            - dist
       - save_npm
   stage:
-    executor:
-      name: default
-    working_directory: ~/unplugged-hp
-    steps:
-      - attach_workspace:
-        at: ~/unplugged-hp
-      - run:
-        name: stage to Firebase
-        command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
-
+      executor: default
+      working_directory: ~/unplugged-hp
+      steps:
+          - attach_workspace:
+              at: ~/unplugged-hp
+          - run:
+              name: stage to Firebase
+              command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
 workflows:
-  version: 2
   deploy:
     jobs:
-      - build:
+      - build
       - stage:
-        requires:
-          - build
-        filters:
-          branches:
-            - develop
-            - master
+          requires:
+            - build
+          filters:
+              branches:
+                only:
+                  - develop
+                  - master
