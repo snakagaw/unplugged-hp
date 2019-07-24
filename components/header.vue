@@ -25,34 +25,44 @@
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
             <b-nav-item href="/">
-            <img
-                src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_home_off.gif"
-                alt="ホーム"
-              />
+              <div class="mx-auto" style="width: 120px;">
+                <img
+                  src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_home_off.gif"
+                  alt="ホーム"
+                />
+              </div>
             </b-nav-item>
             <b-nav-item href="/">
-              <img
-                src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_special_off.gif"
-                alt="新歓特設"
-              />
+              <div class="mx-auto" style="width: 120px;">
+                <img
+                  src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_special_off.gif"
+                  alt="新歓特設"
+                />
+              </div>
             </b-nav-item>
             <b-nav-item href="/">
-              <img
-                src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_about_us_off.gif"
-                alt="サークル紹介"
-              />
+              <div class="mx-auto" style="width: 120px;">
+                <img
+                  src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_about_us_off.gif"
+                  alt="サークル紹介"
+                />
+              </div>
             </b-nav-item>
             <b-nav-item href="/">
-              <img
-                src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_members_off.gif"
-                alt="会員"
-              />
+              <div class="mx-auto" style="width: 120px;">
+                <img
+                  src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_members_off.gif"
+                  alt="会員"
+                />
+              </div>
             </b-nav-item>
             <b-nav-item href="/">
-              <img
-                src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_links_off.gif"
-                alt="リンク"
-              />
+              <div class="mx-auto" style="width: 120px;">
+                <img
+                  src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/global_navi_links_off.gif"
+                  alt="リンク"
+                />
+              </div>
             </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
