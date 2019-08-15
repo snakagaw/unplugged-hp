@@ -86,3 +86,7 @@ sw.*
 
 # Mac OSX
 .DS_Store
+
+# unplugged-hp
+summary.json
+output/

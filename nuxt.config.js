@@ -1,4 +1,16 @@
-
+// summary.json を読み込む. `yarn run md`が成功していないとエラーを吐く.
+const { sourceFileArray } = require('./summary.json');
+/* summary.json の, sourceFileArray に, MarkDown ファイルのパス一覧が定義されている.
+ * 各パスについて, contents/2019-08-16-hogehoge.md から, /posts/2019-08-16/hogehoge を生成.
+ * generateDynamicRoutes という変数にして, generate.routes に渡している.
+ */
+const generateDynamicRoutes = callback => {
+  const routes = sourceFileArray.map(sourceFileName => {
+    const regex = /^contents\/(\d{4}-\d+-\d+)-(.+).md$/u
+    return `posts/${sourceFileName.toString().replace(regex, "$1/$2").toString()}`;
+  });
+  callback(null, routes);
+};
 export default {
   mode: 'universal',
   /*
@@ -28,6 +40,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/markdownFileToURL.js',
   ],
   /*
   ** Nuxt.js modules
@@ -36,6 +49,7 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/markdownit',
+    '@nuxtjs/axios'
   ],
   /*
   ** Build configuration
@@ -58,5 +72,8 @@ export default {
     langPrefix: 'language-',
     quotes: '“”‘’',
     highlight: function (/*str, lang*/) { return ''; },
+  },
+  generate: {
+    routes: generateDynamicRoutes,
   },
 }

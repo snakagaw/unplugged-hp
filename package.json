@@ -8,9 +8,11 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "md": "processmd \"contents/**/*.md\" --stdout --outputDir output > summary.json"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/markdownit": "^1.2.5",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-rc.11",
@@ -21,6 +23,7 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "nodemon": "^1.18.9",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "processmd": "^4.4.2"
   }
 }

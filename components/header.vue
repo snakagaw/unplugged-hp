@@ -13,7 +13,7 @@
     <div>
       <b-navbar toggleable="lg">
         <b-navbar-brand href="/">
-          <img src="~assets/brand_icon.png" alt="京大アンプラグド" width="200" />
+          <img class="brand" src="~assets/brand_icon.png" alt="京大アンプラグド" width="200" />
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -76,14 +76,13 @@ export default {
 }
 
 .top ul {
-  position: absolute;
   right: 0;
   margin: 0px;
   height: inherit;
 }
 
 .top li {
-  float: left;
+  float: right;
   height: inherit;
   list-style-image: url(https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/icon/icon-dot.gif);
   list-style-position: inside;
@@ -95,6 +94,9 @@ export default {
   color: #463100;
   text-decoration: underline;
   padding: 0px;
+}
+.brand {
+  margin-left: 10%;
 }
 </style>
 

@@ -22,6 +22,7 @@ jobs:
       - checkout
       - restore_npm
       - run: yarn install
+      - run: yarn md
       - run: yarn generate
       - persist_to_workspace:
           root: /tmp/unplugged-hp
