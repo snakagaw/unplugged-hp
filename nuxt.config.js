@@ -49,7 +49,8 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/markdownit',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-fontawesome',
   ],
   /*
   ** Build configuration
@@ -72,6 +73,14 @@ export default {
     langPrefix: 'language-',
     quotes: '“”‘’',
     highlight: function (/*str, lang*/) { return ''; },
+  },
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
   },
   generate: {
     routes: generateDynamicRoutes,

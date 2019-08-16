@@ -49,3 +49,13 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+
+## modules
+### bootstrap-vue/nuxt
+components reference : https://bootstrap-vue.js.org/docs/components/alert
+
+
+### nuxt-fontawesome
+- [icons](https://fontawesome.com/icons?d=gallery&m=free)
+- use like `<font-awesome-icon icon="tractor"/>`
