@@ -6,7 +6,7 @@
           <a href="https://ku-unplugged.net/index.php/sitemap/">サイトマップ</a>
         </li>
         <li>
-          <a href="https://ku-unplugged.net/index.php/contact/">お問い合わせ</a>
+          <nuxt-link to="/contacts">お問い合わせ</nuxt-link>
         </li>
       </ul>
     </div>
@@ -44,7 +44,7 @@
                 <img src="~/assets/nav_images/members_lg.gif" class="d-none d-lg-block" alt="会員" />
               </div>
             </b-nav-item>
-            <b-nav-item href="/">
+            <b-nav-item to="/links">
               <div class="mx-auto" style="width: 120px;">
                 <img src="~/assets/nav_images/links_sp.gif" class="d-lg-none" alt="リンク" />
                 <img src="~/assets/nav_images/links_lg.gif" class="d-none d-lg-block" alt="リンク" />
