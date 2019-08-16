@@ -12,15 +12,15 @@
     </div>
     <div>
       <b-navbar toggleable="lg">
-        <b-navbar-brand href="/">
-          <img class="brand" src="~assets/brand_icon.png" alt="京大アンプラグド" width="200" />
+        <b-navbar-brand to="#">
+          <img class="brand" src="~assets/brand_icon.png" alt="京大アンプラグド" width="245" />
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="/">
+            <b-nav-item to="#">
               <div class="mx-auto" style="width: 120px;">
                 <img src="~/assets/nav_images/home_sp.gif" class="d-lg-none" alt="ホーム" />
                 <img src="~/assets/nav_images/home_lg.gif" class="d-none d-lg-block" alt="ホーム" />
@@ -32,7 +32,7 @@
                 <img src="~/assets/nav_images/special_lg.gif" class="d-none d-lg-block" alt="新歓特設" />
               </div>
             </b-nav-item>
-            <b-nav-item href="/">
+            <b-nav-item to="/about">
               <div class="mx-auto" style="width: 120px;">
                 <img src="~/assets/nav_images/about_sp.gif" class="d-lg-none" alt="サークル紹介" />
                 <img src="~/assets/nav_images/about_lg.gif" class="d-none d-lg-block" alt="サークル紹介" />

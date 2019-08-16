@@ -2,7 +2,7 @@
   <div class="main">
     <ul>
       <li v-for="(post, key) in posts.fileMap" :key="key">
-        <nuxt-link :to='$markdownFileToURL(post.sourceBase)'>{{ post.title}}</nuxt-link>
+        <nuxt-link :to='$markdownFileToURL(post.sourceBase)'>{{ post.title }}</nuxt-link>
       </li>
     </ul>
   </div>

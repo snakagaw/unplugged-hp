@@ -1,19 +1,25 @@
 <template>
-  <div class="container">
+  <b-container>
     <unplugged_header />
     <nuxt />
-  </div>
+    <unplugged_footer />
+  </b-container>
 </template>
 <script>
 import unplugged_header from '~/components/header.vue'
+import unplugged_footer from '~/components/footer.vue'
 
 export default {
   components: {
-    unplugged_header
+    unplugged_header,
+    unplugged_footer
   }
 }
 </script>
 <style>
+.container  {
+  padding: 0px;
+}
 h1 {
   /* clear: both; */
   margin-top: 15px;
@@ -26,11 +32,12 @@ h1 {
   color: #463100;
   font-size: 1.6em;
   /* letter-spacing: 0.25em; */
-  /* font-weight: bold; */
+  font-weight: bold;
+  font-family: 'ＭＳ Ｐ明朝', serif;
 }
 h2 {
   clear: both;
-  margin: 0 -10px 14px -10px;
+  margin: 30px 10px 14px 10px;
   margin-bottom: 14px;
   margin-bottom: 14px;
   padding: 10px 10px 10px 22px;
@@ -39,5 +46,11 @@ h2 {
   border-bottom: 1px solid #ffeeaa;
   font-size: 1.286em;
   font-weight: bold;
+  font-family: 'ＭＳ Ｐ明朝', serif;
+}
+p {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 1rem;
 }
 </style>
