@@ -12,7 +12,7 @@
     </div>
     <div>
       <b-navbar toggleable="lg">
-        <b-navbar-brand to="#">
+        <b-navbar-brand to="/">
           <img class="brand" src="~assets/brand_icon.png" alt="京大アンプラグド" width="245" />
         </b-navbar-brand>
 
@@ -20,7 +20,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item to="#">
+            <b-nav-item to="/">
               <div class="mx-auto" style="width: 120px;">
                 <img src="~/assets/nav_images/home_sp.gif" class="d-lg-none" alt="ホーム" />
                 <img src="~/assets/nav_images/home_lg.gif" class="d-none d-lg-block" alt="ホーム" />

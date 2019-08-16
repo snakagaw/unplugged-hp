@@ -1,5 +1,6 @@
 // summary.json を読み込む. `yarn run md`が成功していないとエラーを吐く.
 const { sourceFileArray } = require('./summary.json');
+
 /* summary.json の, sourceFileArray に, MarkDown ファイルのパス一覧が定義されている.
  * 各パスについて, contents/2019-08-16-hogehoge.md から, /posts/2019-08-16/hogehoge を生成.
  * generateDynamicRoutes という変数にして, generate.routes に渡している.
@@ -11,13 +12,15 @@ const generateDynamicRoutes = callback => {
   });
   callback(null, routes);
 };
+
+// 設定. デフォのを読み込んでる.
 export default {
   mode: 'universal',
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '京大アンプラグド',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

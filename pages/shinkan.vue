@@ -19,7 +19,7 @@
         data-show-count="false"
         data-lang="ja"
         data-size="large"
-      >@kyodaiunpluggedさんをフォロー</a>
+      >@kyodaiunpluggedをフォロー</a>
 
       <script>
   !(function(d, s, id) {
