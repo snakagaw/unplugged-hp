@@ -18,11 +18,4 @@ export default {
 .link-next {
   text-align: right;
 }
-a {
-  text-decoration: underline;
-  color: #463100;
-}
-a:hover {
-  color: #fd9e00;
-}
 </style>

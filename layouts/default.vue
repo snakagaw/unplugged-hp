@@ -53,4 +53,11 @@ p {
   margin-right: 10px;
   margin-bottom: 1rem;
 }
+a {
+  text-decoration: underline;
+  color: #463100;
+}
+a:hover {
+  color: #fd9e00;
+}
 </style>

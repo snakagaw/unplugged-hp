@@ -26,7 +26,7 @@
                 <img src="~/assets/nav_images/home_lg.gif" class="d-none d-lg-block" alt="ホーム" />
               </div>
             </b-nav-item>
-            <b-nav-item href="/">
+            <b-nav-item to="/shinkan">
               <div class="mx-auto" style="width: 120px;">
                 <img src="~/assets/nav_images/special_sp.gif" class="d-lg-none" alt="新歓特設" />
                 <img src="~/assets/nav_images/special_lg.gif" class="d-none d-lg-block" alt="新歓特設" />
