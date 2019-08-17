@@ -1,9 +1,5 @@
 <template>
   <div class="main">
-    <img
-      src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/main.jpg"
-      style="width:100%"
-    />
     <h1>京大アンプラグドへようこそ！</h1>
     <p>
       京大アンプラグドは、京都大学公認アコースティック軽音サークルです！
@@ -30,7 +26,7 @@
       <br />大小様々な編成で演奏しています。
       <br />
       <!-- <p :v-html="meeting_room" /> -->
-      <no-ssr>{{ get_room() }}</no-ssr>
+      <!-- <no-ssr>{{ get_room() }}</no-ssr> -->
     </p>
   </div>
 </template>
@@ -54,6 +50,7 @@ export default {
     }
   },
   created: function() {
+    return;
     this.$axios.$get('http://localhost:8000/today').then(res => {
       this.meeting_room = res
       console.log(res + this.meeting_room)
@@ -61,6 +58,7 @@ export default {
   },
   methods: {
     get_room: function() {
+      return;
       this.$axios.$get('http://localhost:8000/today').then(res => {
         console.log(res)
         return res

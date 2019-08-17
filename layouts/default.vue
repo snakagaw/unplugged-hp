@@ -1,23 +1,28 @@
 <template>
   <b-container>
-    <unplugged_header />
+    <unplugged-header />
+    <img
+      v-if="$nuxt.$route.name === 'index'"
+      src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/main.jpg"
+      style="width:100%"
+    />
     <nuxt />
-    <unplugged_footer />
+    <unplugged-footer />
   </b-container>
 </template>
 <script>
-import unplugged_header from '~/components/header.vue'
-import unplugged_footer from '~/components/footer.vue'
+import unpluggedHeader from '~/components/header.vue'
+import unpluggedFooter from '~/components/footer.vue'
 
 export default {
   components: {
-    unplugged_header,
-    unplugged_footer
+    unpluggedHeader,
+    unpluggedFooter
   }
 }
 </script>
 <style>
-.container  {
+.container {
   padding: 0px;
 }
 h1 {
