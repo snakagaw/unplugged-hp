@@ -6,24 +6,36 @@
       src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/main.jpg"
       style="width:100%"
     />
-    <nuxt />
+    <b-row>
+      <b-col md="8">
+        <nuxt />
+      </b-col>
+      <b-col md="4">
+        <unplugged-sidebar />
+      </b-col>
+    </b-row>
     <unplugged-footer />
   </b-container>
 </template>
 <script>
 import unpluggedHeader from '~/components/header.vue'
 import unpluggedFooter from '~/components/footer.vue'
+import unpluggedSidebar from '~/components/sidebar.vue'
 
 export default {
   components: {
     unpluggedHeader,
-    unpluggedFooter
+    unpluggedFooter,
+    unpluggedSidebar
   }
 }
 </script>
 <style>
 .container {
   padding: 0px;
+}
+.col-4 {
+  margin:0px;
 }
 h1 {
   /* clear: both; */
