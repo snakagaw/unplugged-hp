@@ -34,8 +34,8 @@ export default {
 .container {
   padding: 0px;
 }
-.col-4 {
-  margin:0px;
+.row {
+  margin: 0px;
 }
 h1 {
   /* clear: both; */
