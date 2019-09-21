@@ -20,14 +20,8 @@
         <h3>ブログカテゴリー</h3>
         <div>
           <ul class="list">
-            <li>
-              <a href="https://ku-unplugged.net/index/category/information/">お知らせ</a> (6)
-            </li>
-            <li>
-              <a href="https://ku-unplugged.net/index/category/event/">イベント</a> (10)
-            </li>
-            <li>
-              <a href="https://ku-unplugged.net/index/category/live/">ライブ</a> (72)
+            <li v-for="(_, key) in $categories" :key="key">
+              <nuxt-link :to="`/categories/${key}`">{{key}}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -61,6 +55,6 @@ ul {
   border-right: 1px solid #000000;
 }
 .list {
-  padding-left:  20px;
+  padding-left: 20px;
 }
 </style>
