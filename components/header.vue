@@ -2,9 +2,9 @@
   <div>
     <div class="top">
       <ul>
-        <li>
+        <!-- <li>
           <a href="https://ku-unplugged.net/index.php/sitemap/">サイトマップ</a>
-        </li>
+        </li> -->
         <li>
           <nuxt-link to="/contacts">お問い合わせ</nuxt-link>
         </li>
@@ -71,7 +71,7 @@ export default {
 .top {
   height: 25px;
   width: 100%;
-  background: url(https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/utility_background.gif)
+  background: url('~assets/images/top-background.gif')
     repeat center;
 }
 
@@ -84,7 +84,7 @@ export default {
 .top li {
   float: right;
   height: inherit;
-  list-style-image: url(https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/icon/icon-dot.gif);
+  list-style-image: url('~assets/images/icon-dot.gif');
   list-style-position: inside;
   margin-left: 20px;
   margin-right: 10px;

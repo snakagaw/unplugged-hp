@@ -3,7 +3,7 @@
     <unplugged-header />
     <img
       v-if="$nuxt.$route.name === 'index'"
-      src="https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/main.jpg"
+      src="~/assets/images/main.jpg"
       style="width:100%"
     />
     <b-row>
@@ -44,7 +44,7 @@ h1 {
   padding-left: 35px;
   padding-bottom: 10px;
   border-bottom: 3px dotted #fd9e00;
-  background: url(https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/icon/icon_arrow1.gif)
+  background: url("~assets/images/h1-arrow.gif")
     left top no-repeat;
   color: #463100;
   font-size: 1.6em;

@@ -9,12 +9,20 @@
           <b>4共31</b> です
           <br />
           <br />
-          <a href=" https://ku-unplugged.net/index/live/10月ライブ/ ">10月ライブ</a>を行いました。
+          <nuxt-link :to="allPosts[0].url">{{allPosts[0].title}}</nuxt-link>
         </div>
       </li>
       <li class="sidebar-item">
         <h3>twitter</h3>
-        <div><a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/kyodaiunplugged?ref_src=twsrc%5Etfw">Tweets by kyodaiunplugged</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        <div>
+          <a
+            class="twitter-timeline"
+            data-height="400"
+            data-theme="light"
+            href="https://twitter.com/kyodaiunplugged?ref_src=twsrc%5Etfw"
+          >Tweets by kyodaiunplugged</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </li>
       <li class="sidebar-item">
         <h3>ブログカテゴリー</h3>
@@ -57,5 +65,15 @@ ul {
 .list {
   padding-left: 20px;
 }
-
 </style>
+<script>
+import allPosts from '~/plugins/allPosts.js'
+export default {
+  data: function() {
+    return {
+      allPosts: allPosts,
+      selectedYear: null
+    }
+  }
+}
+</script>

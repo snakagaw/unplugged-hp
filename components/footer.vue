@@ -35,7 +35,7 @@
 </template>
 <style scoped>
 .footer {
-  background: url(https://ku-unplugged.net/wp/wp-content/themes/keni_light_wp/images/common/footer_background.gif)
+  background: url('~assets/images/footer-background.gif')
     no-repeat;
   background-size: cover;
 }
@@ -58,7 +58,6 @@ h3 {
 </style>
 <script>
 import allPosts from '~/plugins/allPosts.js'
-// import { watch } from 'fs'
 export default {
   data: function() {
     return {
