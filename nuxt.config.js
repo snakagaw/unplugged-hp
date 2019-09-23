@@ -10,9 +10,9 @@ const generateDynamicRoutes = callback => {
   years.years.forEach(year => {
     routes.push('/years/' + year)
   })
-  for ([key, value] of categories) {
+  Object.keys(categories).forEach(function (key) {
     routes.push('/categories/' + key)
-  }
+  });
   callback(null, routes)
 }
 
