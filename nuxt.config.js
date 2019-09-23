@@ -1,18 +1,18 @@
-// summary.json を読み込む. `yarn run md`が成功していないとエラーを吐く.
-const { sourceFileArray } = require('./summary.json')
+import allPosts from './plugins/allPosts.js'
+import years from './plugins/years.js'
+import categories from './plugins/categories.js'
 
-/* summary.json の, sourceFileArray に, MarkDown ファイルのパス一覧が定義されている.
- * 各パスについて, contents/2019-08-16-hogehoge.md から, /posts/2019-08-16/hogehoge を生成.
- * generateDynamicRoutes という変数にして, generate.routes に渡している.
- */
 const generateDynamicRoutes = callback => {
-  const routes = sourceFileArray.map(sourceFileName => {
-    const regex = /^contents\/(\d{4}-\d+-\d+)-(.+).md$/u
-    return `posts/${sourceFileName
-      .toString()
-      .replace(regex, '$1/$2')
-      .toString()}`
+  var routes = []
+  allPosts.forEach(post => {
+    routes.push(post.url)
   })
+  years.years.forEach(year => {
+    routes.push('/years/' + year)
+  })
+  for ([key, value] of categories) {
+    routes.push('/categories/' + key)
+  }
   callback(null, routes)
 }
 
@@ -46,11 +46,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '~/plugins/markdownFileToURL.js',
-    '~/plugins/categories.js',
-    '~/plugins/extractDate.js'
-  ],
+  plugins: ['~/plugins/categoriesDI.js', '~/plugins/yearsDI.js'],
   /*
    ** Nuxt.js modules
    */
@@ -61,7 +57,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     '@nuxtjs/moment',
-    'nuxt-fontawesome',
+    'nuxt-fontawesome'
   ],
   /*
    ** Build configuration

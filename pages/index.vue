@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import allPosts from '~/plugins/allPosts.js'
 import Logo from '~/components/Logo.vue'
 import axios from '@nuxtjs/axios'
 
@@ -50,7 +51,7 @@ export default {
     }
   },
   created: function() {
-    return;
+    return
     this.$axios.$get('http://localhost:8000/today').then(res => {
       this.meeting_room = res
       console.log(res + this.meeting_room)
@@ -58,7 +59,7 @@ export default {
   },
   methods: {
     get_room: function() {
-      return;
+      return
       this.$axios.$get('http://localhost:8000/today').then(res => {
         console.log(res)
         return res

@@ -1,28 +1,12 @@
-const { fileMap } = require('../summary.json')
+import allPosts from './allPosts.js'
 
-// カテゴリー一覧を取得.
-
-function markdownFileToURL(filename) {
-  const regex = /^(\d{4}-\d+-\d+)-(.+).md$/u
-  return filename
-    .toString()
-    .replace(regex, '$1/$2')
-    .toString()
-}
-
+// カテゴリー一覧を作成
 var categories = {}
-var posts = Object.entries(fileMap)
-posts.forEach(function(item) {
-  if (!categories[item[1].category]) {
-    categories[item[1].category] = []
+allPosts.forEach(function(post) {
+  if (!categories[post.category]) {
+    categories[post.category] = []
   }
-  categories[item[1].category].push({
-    url: '/posts/' + markdownFileToURL(item[1].sourceBase),
-    title: item[1].title
-
-  })
+  categories[post.category].push(post)
 })
 
-export default ({}, inject) => {
-  inject('categories', categories)
-}
+export default categories

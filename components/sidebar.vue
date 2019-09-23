@@ -14,14 +14,14 @@
       </li>
       <li class="sidebar-item">
         <h3>twitter</h3>
-        <div>hogehoge</div>
+        <div><a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/kyodaiunplugged?ref_src=twsrc%5Etfw">Tweets by kyodaiunplugged</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
       </li>
       <li class="sidebar-item">
         <h3>ブログカテゴリー</h3>
         <div>
           <ul class="list">
-            <li v-for="(_, key) in $categories" :key="key">
-              <nuxt-link :to="`/categories/${key}`">{{key}}</nuxt-link>
+            <li v-for="(posts, category) in $categories" :key="posts.length">
+              <nuxt-link :to="`/categories/${category}`">{{category}}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -57,4 +57,5 @@ ul {
 .list {
   padding-left: 20px;
 }
+
 </style>
