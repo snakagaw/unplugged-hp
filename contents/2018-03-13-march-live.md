@@ -8,16 +8,16 @@ category: ライブ
 
 以下がプログラムになります。
 
-1.プルメリア〜花唄〜/Aqua Timez
-2.ソラニン/ASIAN KUNG-FU GENERATION
-3.Shape of My heart/Sting
-4.オトシモノ/miwa
-5.キラーボール/ゲスの極み乙女
-6.ワインレッドの心/安全地帯
-7.I'm home/神田莉緒香
-8.beautiful glider/BUMP OF CHICKEN
-9.京都の大学生/くるり
-10.灰色と青/米津玄師(+菅田将暉)
-11.ノスタルジア/いきものがかり
-12.エクスタシー/風味堂
-13.心の花を咲かせよう/いきものがかり
+1. プルメリア〜花唄〜/Aqua Timez
+2. ソラニン/ASIAN KUNG-FU GENERATION
+3. Shape of My heart/Sting
+4. オトシモノ/miwa
+5. キラーボール/ゲスの極み乙女
+6. ワインレッドの心/安全地帯
+7. I'm home/神田莉緒香
+8. beautiful glider/BUMP OF CHICKEN
+9. 京都の大学生/くるり
+10. 灰色と青/米津玄師(+菅田将暉)
+11. ノスタルジア/いきものがかり
+12. エクスタシー/風味堂
+13. 心の花を咲かせよう/いきものがかり

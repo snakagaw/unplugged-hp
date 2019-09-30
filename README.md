@@ -22,7 +22,7 @@
   1. テンプレ通りでいいです. `Update about.md`とか簡単で. 「かいちょーに言われて嫌々書いた」とかでも全然良いと思います. 
   2. `commit directory to the master branch`を選んじゃって大丈夫です. 気になる人はPR立ててください. 
   3. `Commit changes`を押します. 
-5.数分すると, https://unplugged-hp.firebaseapp.com に反映されてます. ユーザー名: `kiuchi`, パスワード `mickey` です. (まぁどーせ公開するし適当でいいかなと思い...)
+5. 数分すると, https://unplugged-hp.firebaseapp.com に反映されてます. ユーザー名: `kiuchi`, パスワード `mickey` です. (まぁどーせ公開するし適当でいいかなと思い...)
 6. 一応確認します. LGTM(Looks Great to Meね) だったら, circleci #TODO: リンク貼る で, `Approve`を押します. これ押すとこれまた数分で本番に反映されます. 
   
 
