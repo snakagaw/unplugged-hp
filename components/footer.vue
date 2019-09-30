@@ -23,7 +23,8 @@
             <option v-for="year in $years.years" :key="year" :value="year">{{ year }}</option>
           </select>
         </b-col>
-        <b-col md>foobar</b-col>
+        <!-- TODO: 検索昨日 -->
+        <b-col md></b-col>
       </b-row>
     </b-container>
     <b-container class="text-center">

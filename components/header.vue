@@ -38,7 +38,7 @@
                 <img src="~/assets/nav_images/about_lg.gif" class="d-none d-lg-block" alt="サークル紹介" />
               </div>
             </b-nav-item>
-            <b-nav-item href="/">
+            <b-nav-item to="/members">
               <div class="mx-auto" style="width: 120px;">
                 <img src="~/assets/nav_images/members_sp.gif" class="d-lg-none" alt="会員" />
                 <img src="~/assets/nav_images/members_lg.gif" class="d-none d-lg-block" alt="会員" />
