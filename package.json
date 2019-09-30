@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "md": "processmd \"contents/**/*.md\" --stdout --outputDir output > summary.json"
+    "md": "processmd \"contents/**/*.md\" --stdout --outputDir output --markdownOptions commonmark > summary.json"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",

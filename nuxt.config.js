@@ -93,20 +93,6 @@ export default {
   moment: {
     locales: ['ja']
   },
-  sitemap: {
-    hostname: 'https://example.com',
-    gzip: true,
-    exclude: ['/secret', '/admin/**'],
-    routes: [
-      '/page/1',
-      {
-        url: '/page/2',
-        changefreq: 'daily',
-        priority: 1,
-        lastmodISO: '2017-06-30T13:30:00.000Z'
-      }
-    ]
-  },
   generate: {
     routes: generateDynamicRoutes
   }
