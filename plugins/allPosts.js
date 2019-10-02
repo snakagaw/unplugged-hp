@@ -23,7 +23,8 @@ let allPosts = Object.entries(fileMap).map(([key, post]) => ({
     require('../output/' + post.base)
       .bodyHtml.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')
       .replace(/\n/g, ' ')
-      .slice(0, 100) + '···'
+      .slice(0, 100) + '···',
+  text: require('../output/' + post.base).bodyHtml
 }))
 allPosts.sort(function(a, b) {
   return a.date.isBefore(b.date)

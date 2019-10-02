@@ -23,8 +23,10 @@
             <option v-for="year in $years.years" :key="year" :value="year">{{ year }}</option>
           </select>
         </b-col>
-        <!-- TODO: 検索昨日 -->
-        <b-col md></b-col>
+        <b-col md>
+          <h3>検索</h3>
+          <n-link to="/search/">検索はこちら</n-link>
+        </b-col>
       </b-row>
     </b-container>
     <b-container class="text-center">
@@ -48,6 +50,17 @@ h3 {
   font-size: 1em;
   font-weight: bold;
 }
+a {
+  margin: 15px;
+}
+select {
+  margin: 15px;
+}
+ul a{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 
 /* デフォのbootstrap では余計なマージンが設定されており, spで見たときに15px分左右にスクロールできてしまいイラつくので消す. */
 .row {
