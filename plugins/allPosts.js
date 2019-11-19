@@ -14,20 +14,20 @@ function extractDate(name) {
   return moment(name.match(regex)[0])
 }
 
-let allPosts = Object.entries(fileMap).map(([key, post]) => ({
-  title: post.title,
-  url: '/posts/' + markdownFileToURL(post.sourceBase),
-  date: extractDate(post.sourceBase),
-  category: post.category,
+var files = Object.keys(fileMap)
+files.reverse()
+
+var allPosts = files.map( file => ({
+  title: fileMap[file].title,
+  url: '/posts/' + markdownFileToURL(fileMap[file].sourceBase),
+  date: extractDate(fileMap[file].sourceBase),
+  category: fileMap[file].category,
   summary:
-    require('../output/' + post.base)
+    require('../output/' + fileMap[file].base)
       .bodyHtml.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')
       .replace(/\n/g, ' ')
       .slice(0, 100) + '···',
-  text: require('../output/' + post.base).bodyHtml
+  text: require('../output/' + fileMap[file].base).bodyHtml
 }))
-allPosts.sort(function(a, b) {
-  return a.date.isBefore(b.date)
-})
 
 export default allPosts
