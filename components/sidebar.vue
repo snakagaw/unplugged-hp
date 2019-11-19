@@ -2,14 +2,30 @@
   <div class="sidebar">
     <ul>
       <li class="sidebar-item">
+        <h3>例会教室</h3>
+        <div class="textwidget">
+          <span v-if="today">
+            <span v-if="yesterday">
+              本日({{ today | md }})の AM 5:00までの例会教室は <br />
+              <b>{{ yesterdayRoom }}</b
+              >,<br /><br />
+              本日({{ today | md }})の例会教室は
+              <br />
+              <b>{{ todayRoom }}</b> です.
+            </span>
+            <span v-else>
+              本日({{ today | md }})の例会教室は
+              <br />
+              <b>{{ todayRoom }}</b> です.
+            </span>
+          </span>
+          <br />
+        </div>
+      </li>
+      <li class="sidebar-item">
         <h3>最近の活動</h3>
         <div class="textwidget">
-          今日(8月17日)の例会教室は
-          <br />
-          <b>4共31</b> です
-          <br />
-          <br />
-          <nuxt-link :to="allPosts[0].url">{{allPosts[0].title}}</nuxt-link>
+          <nuxt-link :to="allPosts[0].url">{{ allPosts[0].title }}</nuxt-link>
         </div>
       </li>
       <li class="sidebar-item">
@@ -20,8 +36,13 @@
             data-height="400"
             data-theme="light"
             href="https://twitter.com/kyodaiunplugged?ref_src=twsrc%5Etfw"
-          >Tweets by kyodaiunplugged</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            >Tweets by kyodaiunplugged</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
         </div>
       </li>
       <li class="sidebar-item">
@@ -29,7 +50,9 @@
         <div>
           <ul class="list">
             <li v-for="(posts, category) in $categories" :key="posts.length">
-              <nuxt-link :to="`/categories/${category}`">{{category}}</nuxt-link>
+              <nuxt-link :to="`/categories/${category}`">{{
+                category
+              }}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -68,11 +91,32 @@ ul {
 </style>
 <script>
 import allPosts from '~/plugins/allPosts.js'
+import moment from 'moment'
 export default {
   data: function() {
     return {
       allPosts: allPosts,
-      selectedYear: null
+      selectedYear: null,
+      todayRoom: '',
+      today: '',
+      yesterdayRoom: '',
+      yesterday: ''
+    }
+  },
+  created: function() {
+    this.$axios
+      .$get('https://meetingroomcontroller.appspot.com/room/today')
+      // .$get('http://localhost:8009/room/today')
+      .then(res => {
+        this.todayRoom = res.room
+        this.today = res.date
+        this.yesterday = res['date-before']
+        this.yesterdayRoom = res['room-before']
+      })
+  },
+  filters: {
+    md: function(date) {
+      return moment(date).format('MM/DD')
     }
   }
 }

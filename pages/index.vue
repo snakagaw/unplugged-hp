@@ -52,7 +52,7 @@ export default {
   },
   created: function() {
     return
-    this.$axios.$get('http://localhost:8000/today').then(res => {
+    this.$axios.$get('https://meetingroomcontroller.appspot.com/room/today').then(res => {
       this.meeting_room = res
       console.log(res + this.meeting_room)
     })
