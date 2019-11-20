@@ -46,23 +46,6 @@ export default {
         this.rooms = res
       })
   },
-  computed: {
-    // dateColor(date) {
-    //   let day = moment(date).format('dd')
-    //   return day
-    //   switch (day) {
-    //     case 0:
-    //       return 'danger'
-    //       break
-    //     case 6:
-    //       return 'info'
-    //       break
-    //     default:
-    //       return ''
-    //       break
-    //   }
-    // }
-  },
   filters: {
     md: function(date) {
       return moment(date).format('MM/DD (dd)')

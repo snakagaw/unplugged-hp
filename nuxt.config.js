@@ -55,7 +55,7 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/markdownit',
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
     '@nuxtjs/moment',
     'nuxt-fontawesome'
   ],
