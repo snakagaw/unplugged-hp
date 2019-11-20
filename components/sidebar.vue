@@ -19,7 +19,7 @@
             </span>
           </span>
           <br /><br />
-          <nuxt-link to="meeting-room">今月の例会教室はこちら</nuxt-link>
+          <nuxt-link to="/meeting-room">今月の例会教室はこちら</nuxt-link>
         </div>
       </li>
       <li class="sidebar-item">

@@ -8,7 +8,7 @@ category: お知らせ
 
 <a href="https://calendar.google.com/calendar/embed?src=meeting-room%40ku-unplugged.net&amp;ctz=Asia%2FTokyo">こちら</a>から, web ブラウザでアクセスできます.
 
-また, 個人の Google Calendar やカレンダーアプリなどで, https://calendar.google.com/calendar/ical/meeting-room%40ku-unplugged.net/public/basic.ics を登録していただけます.
+また, 個人の Google Calendar やカレンダーアプリなどで, [https://calendar.google.com/calendar/ical/meeting-room%40ku-unplugged.net/public/basic.ics](https://calendar.google.com/calendar/ical/meeting-room%40ku-unplugged.net/public/basic.ics) を登録していただけます.
 
 <h3>登録のしかた</h3>
 <b>登録は, webブラウザから行ってください(アプリでは登録できません)</b>
