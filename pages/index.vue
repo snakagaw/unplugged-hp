@@ -25,46 +25,6 @@
       <br />アンプラグドではできなさそうなフュージョンやボカロに至るまで
       <br />大小様々な編成で演奏しています。
       <br />
-      <!-- <p :v-html="meeting_room" /> -->
-      <!-- <no-ssr>{{ get_room() }}</no-ssr> -->
     </p>
   </div>
 </template>
-
-<script>
-import allPosts from '~/plugins/allPosts.js'
-import Logo from '~/components/Logo.vue'
-import axios from '@nuxtjs/axios'
-
-export default {
-  components: {
-    Logo
-  },
-  data() {
-    return {
-      meeting_room: ''
-    }
-  },
-  computed: {
-    meeting_room1: function() {
-      return this.meeting_room
-    }
-  },
-  created: function() {
-    return
-    this.$axios.$get('https://meetingroomcontroller.appspot.com/room/today').then(res => {
-      this.meeting_room = res
-      console.log(res + this.meeting_room)
-    })
-  },
-  methods: {
-    get_room: function() {
-      return
-      this.$axios.$get('http://localhost:8000/today').then(res => {
-        console.log(res)
-        return res
-      })
-    }
-  }
-}
-</script>

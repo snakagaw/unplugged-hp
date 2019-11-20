@@ -38,8 +38,7 @@
 </template>
 <style scoped>
 .footer {
-  background: url('~assets/images/footer-background.gif')
-    no-repeat;
+  background: url('~assets/images/footer-background.gif') no-repeat;
   background-size: cover;
 }
 
@@ -56,11 +55,10 @@ a {
 select {
   margin: 15px;
 }
-ul a{
+ul a {
   margin-left: 0px;
   padding-left: 0px;
 }
-
 
 /* デフォのbootstrap では余計なマージンが設定されており, spで見たときに15px分左右にスクロールできてしまいイラつくので消す. */
 .row {

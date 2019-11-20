@@ -15,6 +15,7 @@ function extractDate(name) {
 }
 
 var files = Object.keys(fileMap)
+files.sort()
 files.reverse()
 
 var allPosts = files.map( file => ({
