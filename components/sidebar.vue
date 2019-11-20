@@ -14,12 +14,12 @@
               <b>{{ todayRoom }}</b> です.
             </span>
             <span v-else>
-              本日({{ today | md }})の例会教室は
-              <br />
+              本日({{ today | md }})の例会教室は <br />
               <b>{{ todayRoom }}</b> です.
             </span>
           </span>
-          <br />
+          <br /><br />
+          <nuxt-link to="meeting-room">今月の例会教室はこちら</nuxt-link>
         </div>
       </li>
       <li class="sidebar-item">
