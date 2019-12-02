@@ -5,25 +5,31 @@
   "author": "nakagawa",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname sall.local --port 3333",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "md": "processmd \"contents/**/*.md\" --stdout --outputDir output > summary.json"
+    "md": "processmd \"contents/**/*.md\" --stdout --outputDir output --markdownOptions commonmark > summary.json"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.4",
-    "@nuxtjs/markdownit": "^1.2.5",
-    "bootstrap": "^4.1.3",
-    "bootstrap-vue": "^2.0.0-rc.11",
-    "firebase-tools": "^7.1.1",
-    "nuxt": "^2.0.0"
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
+    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/markdownit": "^1.2.7",
+    "@nuxtjs/moment": "^1.4.0",
+    "@nuxtjs/sitemap": "^2.0.1",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.1.0",
+    "firebase-tools": "^7.8.0",
+    "nuxt": "^2.10.2",
+    "nuxt-fontawesome": "^0.4.0",
+    "processmd": "^4.5.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "nodemon": "^1.18.9",
-    "prettier": "^1.16.4",
-    "processmd": "^4.4.2"
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1"
   }
 }

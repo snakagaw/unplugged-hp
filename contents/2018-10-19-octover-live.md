@@ -1,5 +1,5 @@
 ---
-category: live
+category: ライブ
 ---
 # 10月ライブ
 
@@ -21,3 +21,4 @@ category: live
 13. 茜さす/Aimer
 14. 夏の終わりのハーモニー/井上陽水・安全地帯
 15. STONE FLOWER/中田裕二
+
