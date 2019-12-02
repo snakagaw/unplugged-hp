@@ -84,6 +84,9 @@ sw.*
 # Mac OSX
 .DS_Store
 
+# firebase deploy
+functions/dist
+
 # unplugged-hp
 summary.json
 output/
