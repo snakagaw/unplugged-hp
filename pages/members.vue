@@ -34,32 +34,32 @@
     </p>
     <h2>ライブ音源</h2>
     <p>
-      <a href="https://livelog.ku-unplugged.net">LiveLog</a>でご確認ください.
+      <a href="https://livelog.ku-unplugged.net" target="_blank">LiveLog</a>でご確認ください.
     </p>
     <h2>ライブリハ音源</h2>
     <!-- TODO:名前直す -->
     <p>
-      <a href="https://message.ku-unplugged.net/player/"
+      <a href="https://message.ku-unplugged.net/player/" target="_blank"
         >アンプラ会員向けサイト(リハ音源)</a
       >でご確認ください.
     </p>
     <h2>ライブ動画</h2>
     <p>
-      <a href="https://livelog.ku-unplugged.net">LiveLog</a>でご確認ください.
+      <a href="https://livelog.ku-unplugged.net" target="_blank">LiveLog</a>でご確認ください.
       <br />LiveLogに掲載されていない映像は
-      <a href="https://message.ku-unplugged.net/movie/"
+      <a href="https://message.ku-unplugged.net/movie/" target="_blank"
         >アンプラ会員向けサイト(ライブ映像)からどうぞ.</a
       >
     </p>
     <h2>各種書類</h2>
     <p>
-      <a href="https://message.ku-unplugged.net/others/"
+      <a href="https://message.ku-unplugged.net/others/" target="_blank"
         >アンプラ会員向けサイト(その他資料)</a
       >でご確認ください.
     </p>
     <h2>感想用紙</h2>
     <p>
-      <a href="https://message.ku-unplugged.net/kansou/"
+      <a href="https://message.ku-unplugged.net/kansou/" target="_blank"
         >アンプラ会員向けサイト(感想用紙)</a
       >でご確認ください.
     </p>
@@ -80,6 +80,6 @@
       ></script>
     </p>
     <h2>メーリングリスト</h2>
-    <p><a href="https://message.ku-unplugged.net/">移行しました.</a></p>
+    <p><a href="https://message.ku-unplugged.net/" target="_blank">移行しました.</a>登録は<a href="https://forms.gle/JGfCRzohMeDELvmd6" target="_blank">こちら</a></p>
   </div>
 </template>
