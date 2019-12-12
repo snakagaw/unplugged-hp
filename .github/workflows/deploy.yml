@@ -18,7 +18,9 @@ jobs:
 
     - name: Get yarn cache
       id: yarn-cache
-      run: echo "::set-output name=dir::$(yarn cache dir)"
+      run: |
+        echo "::set-output name=dir::$(yarn cache dir)"
+        yarn cache dir
 
     - name: Cache dependencies
       id: cache
@@ -69,7 +71,3 @@ jobs:
         asset_path: ./dist.zip
         asset_name: dist.zip
         asset_content_type: application/zip
-
-    - name: Echo the greeting's time
-      run: echo '${{ steps.create_release.outputs.html_url }}'
-
