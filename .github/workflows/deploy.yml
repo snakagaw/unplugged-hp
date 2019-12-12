@@ -70,3 +70,6 @@ jobs:
         asset_name: dist.zip
         asset_content_type: application/zip
 
+    - name: Echo the greeting's time
+      run: echo '${{ steps.create_release.outputs.upload_url }}'
+
