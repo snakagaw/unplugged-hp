@@ -19,18 +19,18 @@ jobs:
     - name: Cache dependencies
       uses: actions/cache@v1
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        path: ${{ steps.yarn-cache.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
-          ${{ runner.os }}-node-
+          ${{ runner.os }}-yarn-
 
     - name: install
       run: yarn
 
     - name: generate
       run: |
-        npm run md
-        npm run generate
+        yarn run md
+        yarn run generate
 
     - name: zip
       uses: montudor/action-zip@v0.1.0
