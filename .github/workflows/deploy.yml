@@ -21,6 +21,7 @@ jobs:
       run: echo "::set-output name=dir::$(yarn cache dir)"
 
     - name: Cache dependencies
+      id: cache
       uses: actions/cache@v1
       with:
         path: ${{ steps.yarn-cache.outputs.dir }}
@@ -29,6 +30,7 @@ jobs:
           ${{ runner.os }}-yarn-
 
     - name: install
+      if: steps.cache.outputs.cache-hit != 'true'
       run: yarn
 
     - name: generate
