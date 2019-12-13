@@ -41,7 +41,7 @@ jobs:
 
     - name: zip
       # uses: montudor/action-zip@v0.1.0
-      run: zip dist.zip ./dist
+      run: zip -r dist.zip ./dist
 
     - name: Generate build number
       id: buildnumber
