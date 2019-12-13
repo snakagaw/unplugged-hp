@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>検索</h1>
-    <input v-model="str" placeholder="検索語を入力...">
+    <input v-model="str" placeholder="検索語を入力..." />
     <p v-if="!str">投稿のタイトル, 本文を検索できます</p>
     <ul v-if="searchResult.length > 0 && str">
       <li v-for="(post, key) in searchResult" :key="key">
@@ -13,7 +13,7 @@
 <script>
 import allPosts from '~/plugins/allPosts.js'
 export default {
-  data(){
+  data() {
     return {
       posts: allPosts,
       str: ''
