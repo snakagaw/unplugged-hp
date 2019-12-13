@@ -40,9 +40,8 @@ jobs:
         yarn run generate
 
     - name: zip
-      uses: montudor/action-zip@v0.1.0
-      with:
-       args: zip -qq -r ./dist.zip ./dist
+      # uses: montudor/action-zip@v0.1.0
+      run: zip dist.zip ./dist
 
     - name: Generate build number
       id: buildnumber
