@@ -70,3 +70,6 @@ jobs:
         asset_path: ./dist.zip
         asset_name: dist.zip
         asset_content_type: application/zip
+
+    - name: Trigger Webhook to Coreserver
+      run: curl https://ku-unplugged.net/deploy.php?key=${{ secrets.CORESERVER_DEPLOY_KEY }}
