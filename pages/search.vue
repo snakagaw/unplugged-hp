@@ -8,6 +8,9 @@
         <nuxt-link :to="post.url">{{ post.title }}</nuxt-link>
       </li>
     </ul>
+    <p v-if="searchResult.length === 0">
+      検索結果はありません
+    </p>
   </div>
 </template>
 <script>
