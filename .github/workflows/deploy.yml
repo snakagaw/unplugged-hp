@@ -32,7 +32,9 @@ jobs:
           ${{ runner.os }}-yarn-
 
     - name: install
-      run: yarn
+      run: |
+        yarn cache dir
+        yarn
 
     - name: generate
       run: |
