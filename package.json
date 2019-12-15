@@ -1,7 +1,7 @@
 {
   "name": "unplugged-hp",
   "version": "1.0.0",
-  "description": "Kyodai Unplugged&#39;s Home Page",
+  "description": "京大アンプラグドは京都大学公認サークルです。その名の通り、原則エレキギターやシンセサイザー等のプラグを前提とした楽器を用いない軽音サークルです。アコギやヴァイオリン、管楽器にカホン、ボンゴ等「生音」の音色を大事にしています。",
   "author": "nakagawa",
   "private": true,
   "scripts": {

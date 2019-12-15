@@ -31,6 +31,11 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: '京大, サークル, 軽音, アンプラグド, アコースティック'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
