@@ -1,6 +1,9 @@
 <template>
   <div class="main">
     <h1>例会教室一覧</h1>
+    <p v-if="rooms.length === 0">
+      Now Loading...
+    </p>
     <b-table :items="rooms" :fields="fields">
       <template v-slot:cell(date)="data">
         <span :class="data.value | dayColor">
