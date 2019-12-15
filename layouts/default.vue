@@ -7,6 +7,17 @@
       style="width:100%"
     />
     <b-row>
+      <b-col>
+        <span v-if="room">
+          例会教室は<b>{{ room }}</b
+          >です.
+        </span>
+        <span v-if="$nuxt.$route.name !== 'meeting-room'">
+          一覧は<nuxt-link to="/meeting-room">こちら</nuxt-link>
+        </span></b-col
+      ></b-row
+    >
+    <b-row>
       <b-col md="8">
         <nuxt />
       </b-col>
@@ -21,12 +32,31 @@
 import unpluggedHeader from '~/components/header.vue'
 import unpluggedFooter from '~/components/footer.vue'
 import unpluggedSidebar from '~/components/sidebar.vue'
+import moment from 'moment'
 
 export default {
   components: {
     unpluggedHeader,
     unpluggedFooter,
     unpluggedSidebar
+  },
+  data: function() {
+    return {
+      room: ''
+    }
+  },
+  created: function() {
+    this.$axios
+      .$get('https://meetingroomcontroller.appspot.com/room/today')
+      // .$get('http://localhost:8009/room/today')
+      .then(res => {
+        this.room= res.room
+      })
+  },
+  filters: {
+    md: function(date) {
+      return moment(date).format('MM/DD')
+    }
   }
 }
 </script>
@@ -44,8 +74,7 @@ h1 {
   padding-left: 35px;
   padding-bottom: 10px;
   border-bottom: 3px dotted #fd9e00;
-  background: url("~assets/images/h1-arrow.gif")
-    left top no-repeat;
+  background: url('~assets/images/h1-arrow.gif') left top no-repeat;
   color: #463100;
   font-size: 1.6em;
   /* letter-spacing: 0.25em; */

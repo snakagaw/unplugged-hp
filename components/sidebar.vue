@@ -96,7 +96,6 @@ export default {
   data: function() {
     return {
       allPosts: allPosts,
-      selectedYear: null,
       todayRoom: '',
       today: '',
       yesterdayRoom: '',
