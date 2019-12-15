@@ -72,4 +72,4 @@ jobs:
         asset_content_type: application/zip
 
     - name: Trigger Webhook to Coreserver
-      run: curl https://ku-unplugged.net/deploy.php?key=${{ secrets.CORESERVER_DEPLOY_KEY }}
+      run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}
