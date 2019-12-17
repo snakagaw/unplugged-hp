@@ -10,9 +10,9 @@ const generateDynamicRoutes = callback => {
   years.years.forEach(year => {
     routes.push('/years/' + year)
   })
-  Object.keys(categories).forEach(function (key) {
+  Object.keys(categories).forEach(function(key) {
     routes.push('/categories/' + key)
-  });
+  })
   callback(null, routes)
 }
 
@@ -62,8 +62,10 @@ export default {
     '@nuxtjs/axios',
     // '@nuxtjs/sitemap',
     '@nuxtjs/moment',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    '@nuxtjs/redirect-module'
   ],
+  redirect: [{ from: '^/contact$', to: '/contacts'}],
   /*
    ** Build configuration
    */
