@@ -65,7 +65,7 @@ export default {
     'nuxt-fontawesome',
     '@nuxtjs/redirect-module'
   ],
-  redirect: [{ from: '^/contact$', to: '/contacts'}],
+  redirect: [{ from: '/contact$', to: '/contacts'}],
   /*
    ** Build configuration
    */
