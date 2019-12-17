@@ -80,10 +80,15 @@ export default {
     roomColor(room) {
       switch (room) {
         case '終日使用不可':
+        case '使用不可':
           return 'text-danger'
           break
         case '':
           return 'text-muted'
+          break
+        case '(20時まで音出し不可)':
+          return 'text-success'
+          break
         default:
           return ''
           break
