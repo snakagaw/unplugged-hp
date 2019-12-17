@@ -9,14 +9,14 @@
     <b-row>
       <b-col>
         <span v-if="room">
-          例会教室は<b>{{ room }}</b
-          >です.
+          例会教室は<b>{{ room }}</b>
+          です.
         </span>
         <span v-if="$nuxt.$route.name !== 'meeting-room'">
           一覧は<nuxt-link to="/meeting-room">こちら</nuxt-link>
-        </span></b-col
-      ></b-row
-    >
+        </span>
+      </b-col>
+    </b-row>
     <b-row>
       <b-col md="8">
         <nuxt />
@@ -50,7 +50,7 @@ export default {
       .$get('https://meetingroomcontroller.appspot.com/room/today')
       // .$get('http://localhost:8009/room/today')
       .then(res => {
-        this.room= res.room
+        this.room = res.room
       })
   },
   filters: {
