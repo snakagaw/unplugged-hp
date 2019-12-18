@@ -3,75 +3,75 @@ name: run generate
 on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@master
+      - uses: actions/checkout@master
 
-    - name: setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '13.x'
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "13.x"
 
-    - name: Get yarn cache
-      id: yarn-cache
-      run: |
-        echo "::set-output name=dir::$(yarn cache dir)"
-        yarn cache dir
+      - name: Get yarn cache
+        id: yarn-cache
+        run: |
+          echo "::set-output name=dir::$(yarn cache dir)"
+          yarn cache dir
 
-    - name: Cache dependencies
-      id: cache
-      uses: actions/cache@v1
-      with:
-        path: 'node_modules'
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
+      - name: Cache dependencies
+        id: cache
+        uses: actions/cache@v1
+        with:
+          path: "node_modules"
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
-    - name: install
-      run: |
-        yarn cache dir
-        yarn
+      - name: install
+        run: |
+          yarn cache dir
+          yarn
 
-    - name: generate
-      run: |
-        yarn run md
-        yarn run generate
+      - name: generate
+        run: |
+          yarn run md
+          yarn run generate
 
-    - name: zip
-      # uses: montudor/action-zip@v0.1.0
-      run: zip -r dist.zip ./dist
+      - name: zip
+        # uses: montudor/action-zip@v0.1.0
+        run: zip -r dist.zip ./dist
 
-    - name: Generate build number
-      id: buildnumber
-      uses: einaregilsson/build-number@v2
-      with:
-        token: ${{secrets.github_token}}
+      - name: Generate build number
+        id: buildnumber
+        uses: einaregilsson/build-number@v2
+        with:
+          token: ${{secrets.github_token}}
 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ steps.buildnumber.outputs.build_number }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ steps.buildnumber.outputs.build_number }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: true
 
-    - name: Upload Release Asset
-      id: upload-release-asset
-      uses: actions/upload-release-asset@v1.0.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./dist.zip
-        asset_name: dist.zip
-        asset_content_type: application/zip
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist.zip
+          asset_name: dist.zip
+          asset_content_type: application/zip
 
-    - name: Trigger Webhook to Coreserver
-      run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}
+      - name: Trigger Webhook to Coreserver
+        run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}

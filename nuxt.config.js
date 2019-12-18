@@ -63,9 +63,7 @@ export default {
     // '@nuxtjs/sitemap',
     '@nuxtjs/moment',
     'nuxt-fontawesome',
-    '@nuxtjs/redirect-module'
   ],
-  redirect: [{ from: '/contact$', to: '/contacts'}],
   /*
    ** Build configuration
    */
