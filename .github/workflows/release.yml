@@ -1,0 +1,13 @@
+name: release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Webhook to CoreServer
+        run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}
