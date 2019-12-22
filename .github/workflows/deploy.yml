@@ -92,3 +92,14 @@ jobs:
 
       - name: Trigger Webhook to CoreServer
         run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}
+
+  deploy-to-firebase:
+    runs-on: ubuntu-latest
+    needs: generate
+    steps:
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
