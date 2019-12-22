@@ -1,4 +1,4 @@
-name: build
+name: deploy
 
 on:
   push:
@@ -10,35 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
-      - name: setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "13.x"
-
-      - name: Get yarn cache
-        id: yarn-cache
-        run: |
-          echo "::set-output name=dir::$(yarn cache dir)"
-          yarn cache dir
-
-      - name: Cache dependencies
-        id: cache
-        uses: actions/cache@v1
-        with:
-          path: "node_modules"
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: install
-        run: |
-          yarn cache dir
-          yarn
-
-      - name: generate
-        run: |
-          yarn run md
-          yarn run generate
+      - uses: ./.github/actions/generate
       - name: upload dist
         uses: actions/upload-artifact@v1
         with:
@@ -85,3 +57,6 @@ jobs:
           asset_path: ./dist.zip
           asset_name: dist.zip
           asset_content_type: application/zip
+
+      - name: Trigger Webhook to CoreServer
+        run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}

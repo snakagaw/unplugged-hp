@@ -1,0 +1,13 @@
+name: stage
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: generate
+      - uses: ./.github/actions/generate
