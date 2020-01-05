@@ -35,7 +35,6 @@ jobs:
 
       - name: install
         run: |
-          yarn cache dir
           yarn
 
       - name: generate
@@ -93,14 +92,50 @@ jobs:
       - name: Trigger Webhook to CoreServer
         run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}
 
+  set-firebase:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "13.x"
+
+      - name: Get yarn cache for firebase
+        id: yarn-cache-firebase
+        working-directory: ./functions
+        run: |
+          echo "::set-output name=dir::$(yarn cache dir)"
+          yarn cache dir
+
+      - name: Cache dependencies for firebase
+        id: cache-firebase
+        uses: actions/cache@v1
+        with:
+          working-directory: ./functions
+          path: "node_modules"
+          key: ${{ runner.os }}-yarn-firebase-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: upload functions
+        uses: actions/upload-artifact@v1
+        with:
+          name: functions
+          path: functions
+
   deploy-to-firebase:
     runs-on: ubuntu-latest
     needs: generate
     steps:
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+      - name: download dist
+        uses: actions/download-artifact@v1
         with:
-          args: deploy
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: unplugged-hp
+          name: dist
+          path: functions
+      - name: download functions
+        uses: actions/download-artifact@v1
+        with:
+          name: functions
+      - name: deploy to deploy-to-firebase
+        run: functions/.node_modules/.bin/firebase deploy --token=${{ secrets.FIREBASE_TOKEN }}
