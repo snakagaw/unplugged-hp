@@ -71,7 +71,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.buildnumber.outputs.build_number }}
           release_name: Release ${{ github.ref }}
@@ -100,7 +100,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v1
         with:
-          node-version: "13.x"
+          node-version: "10.x"
 
       - name: Get yarn cache for firebase
         id: yarn-cache-firebase
