@@ -130,4 +130,5 @@ jobs:
           path: functions
 
       - name: deploy to firebase
+        working-directory: ./functions
         run: yarn deploy --token=${{ secrets.FIREBASE_TOKEN }}
