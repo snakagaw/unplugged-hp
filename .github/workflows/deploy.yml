@@ -73,7 +73,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: release-${{ steps.buildnumber.outputs.build_number }}
+          tag_name: ${{ steps.buildnumber.outputs.build_number }}
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
