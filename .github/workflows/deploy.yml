@@ -129,6 +129,9 @@ jobs:
           name: dist
           path: functions
 
-      - name: deploy to firebase
-        working-directory: ./functions
-        run: ./node_modules/.bin/firebase deploy --token=${{ secrets.FIREBASE_TOKEN }}
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only functions
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
