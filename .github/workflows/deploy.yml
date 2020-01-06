@@ -118,6 +118,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - name: install
+        working-directory: ./functions
+        run: yarn
+
       - name: upload functions
         uses: actions/upload-artifact@v1
         with:
@@ -138,4 +142,4 @@ jobs:
         with:
           name: functions
       - name: deploy to deploy-to-firebase
-        run: functions/.node_modules/.bin/firebase deploy --token=${{ secrets.FIREBASE_TOKEN }}
+        run: ./functions/.node_modules/.bin/firebase deploy --token=${{ secrets.FIREBASE_TOKEN }}
