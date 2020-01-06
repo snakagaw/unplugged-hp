@@ -127,7 +127,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: dist
-          path: functions
+          path: functions/dist
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
