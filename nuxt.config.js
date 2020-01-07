@@ -1,20 +1,20 @@
-import allPosts from './plugins/allPosts.js'
-import years from './plugins/years.js'
-import categories from './plugins/categories.js'
+import allPosts from './plugins/allPosts.js';
+import years from './plugins/years.js';
+import categories from './plugins/categories.js';
 
 const generateDynamicRoutes = callback => {
-  var routes = []
-  allPosts.forEach(post => {
-    routes.push(post.url)
-  })
-  years.years.forEach(year => {
-    routes.push('/years/' + year)
-  })
-  Object.keys(categories).forEach(function(key) {
-    routes.push('/categories/' + key)
-  })
-  callback(null, routes)
-}
+  var routes = [];
+  allPosts.forEach (post => {
+    routes.push (post.url);
+  });
+  years.years.forEach (year => {
+    routes.push ('/years/' + year);
+  });
+  Object.keys (categories).forEach (function (key) {
+    routes.push ('/categories/' + key);
+  });
+  callback (null, routes);
+};
 
 // 設定. デフォのを読み込んでる.
 export default {
@@ -25,25 +25,32 @@ export default {
   head: {
     title: '京大アンプラグド',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: process.env.npm_package_description || '',
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: '京大, サークル, 軽音, アンプラグド, アコースティック'
-      }
+        content: '京大, サークル, 軽音, アンプラグド, アコースティック',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
   /*
    ** Global CSS
    */
@@ -71,7 +78,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend (config, ctx) {},
   },
   markdownit: {
     preset: 'default',
@@ -83,22 +90,22 @@ export default {
     xhtmlOut: true,
     langPrefix: 'language-',
     quotes: '“”‘’',
-    highlight: function(/*str, lang*/) {
-      return ''
-    }
+    highlight: function (/*str, lang*/) {
+      return '';
+    },
   },
   fontawesome: {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
-    ]
+        icons: ['fas'],
+      },
+    ],
   },
   moment: {
-    locales: ['ja']
+    locales: ['ja'],
   },
   generate: {
-    routes: generateDynamicRoutes
-  }
-}
+    routes: generateDynamicRoutes,
+  },
+};
