@@ -6,7 +6,7 @@
         <div class="textwidget">
           <span v-if="today">
             <span v-if="yesterday">
-              本日({{ today | md }})の AM 5:00までの例会教室は <br />
+              本日({{ yesterday | md }})の AM 5:00までの例会教室は <br />
               <b>{{ yesterdayRoom }}</b
               >,<br /><br />
               本日({{ today | md }})の例会教室は
