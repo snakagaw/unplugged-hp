@@ -115,7 +115,7 @@ export default {
   },
   filters: {
     md: function(date) {
-      return moment(date).format('MM/DD')
+      return moment(date).format('M/D')
     }
   }
 }
