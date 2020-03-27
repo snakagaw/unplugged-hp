@@ -56,6 +56,10 @@ export default {
 </script>
 
 <style scoped>
+ol#songlist{
+    margin-left: 0;
+    padding-left: calc(10px + 1rem);
+}
 ol#songlist li{
     margin: 0.5rem auto;
 }
