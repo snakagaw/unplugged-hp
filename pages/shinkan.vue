@@ -9,7 +9,7 @@
       <br />サークル内での決定の後にこのページでお知らせします。
       <br />
       <br />お問い合わせの方は
-      <a href="mailto:ku.unplugged.info@gmail.com">メール(ku.unplugged.info@gmail.com)</a>
+      <a href="mailto:info@ku-unplugged.net">メール(info@ku-unplugged.net)</a>
       <br />
       <br />又はtwitter[DM] までお気軽に連絡して下さい!
       <br />
