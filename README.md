@@ -51,6 +51,10 @@ category: ライブ
 # install dependencies
 $ yarn install
 
+# git管理外のsummary.jsonを作成する必要あり
+$ yarn md
+# これで作成できる
+
 # serve with hot reload at localhost:3000
 # you may change port number by usinfg --port 3333
 $ yarn dev
