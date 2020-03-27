@@ -31,7 +31,7 @@
     </b-container>
     <b-container class="text-center">
       <b-row>
-        <b-col>©︎ 2019 京大アンプラグド</b-col>
+        <b-col>©︎ 2020 京大アンプラグド</b-col>
       </b-row>
     </b-container>
   </div>
