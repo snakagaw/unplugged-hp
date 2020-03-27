@@ -1,8 +1,15 @@
 <template>
   <div class="main">
     <h1>ライブ映像</h1>
+    <p>何かこのへんに説明文あるといいかも？</p>
+    <ul>
+        <li v-for="movie in movies" :key="movie.url">
+            <a :href="'#' + movie.url">{{movie.title}}</a>
+        </li>
+    </ul>
+    
     <div v-for="movie in movies" :key="movie.url">
-        <h2 v-text="movie.title"></h2>
+        <h2 v-text="movie.title" :id="movie.url"></h2>
         <div class="iframe-wrap">
             <iframe
                 width="440"
@@ -21,17 +28,15 @@
 
 <script>
 export default {
-    data: function () {
+    data: () => {
         return {
             movies: [
-                {title: 'ラビューラビュー', url: 'bkScuc1PBmU', description: 'fuga'},
+                {title: 'ラビューラビュー/ポルノグラフィティ', url: 'bkScuc1PBmU', description: 'fuga'},
             ],
         }
     },
     methods: {
-        getURL: (youtubeID) => {
-            return 'https://www.youtube.com/embed/' + youtubeID;
-        }
+        getURL: (youtubeID) => 'https://www.youtube.com/embed/' + youtubeID,
     }
 }
 </script>
