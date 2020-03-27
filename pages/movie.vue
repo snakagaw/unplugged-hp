@@ -2,14 +2,14 @@
   <div class="main">
     <h1>ライブ映像</h1>
     <p>何かこのへんに説明文あるといいかも？</p>
-    <ul>
+    <ol id="songlist">
         <li v-for="movie in movies" :key="movie.url">
             <a :href="'#' + movie.url">{{movie.title}}</a>
         </li>
-    </ul>
-    
-    <div v-for="movie in movies" :key="movie.url">
-        <h2 v-text="movie.title" :id="movie.url"></h2>
+    </ol>
+    <p>こっちにも文章はおける</p>
+    <div v-for="(movie, index) in movies" :key="movie.url">
+        <h2 :id="movie.url">{{index + 1}}. {{movie.title}}</h2>
         <div class="iframe-wrap">
             <iframe
                 width="440"
@@ -21,7 +21,7 @@
                 >
             </iframe>
         </div>
-        <p v-text="movie.description"></p>
+        <p id="description">{{movie.description}}</p>
     </div>
   </div>
 </template>
@@ -31,7 +31,21 @@ export default {
     data: () => {
         return {
             movies: [
-                {title: 'ラビューラビュー/ポルノグラフィティ', url: 'bkScuc1PBmU', description: 'fuga'},
+                {
+                    title: 'ラビューラビュー / ポルノグラフィティ',
+                    url: 'bkScuc1PBmU',
+                    description: `この辺に曲に関する説明文
+                        ほげほげ
+                        ほげほげほげ`,
+                },//改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
+                {
+                    title: '君と歩いた季節 / いきものがかり',
+                    url: 'Y0Ho9tFjL3g',
+                    description: `ふがふが
+                        ぐがふが
+                        ほげ`,
+                },
+                
             ],
         }
     },
@@ -42,6 +56,15 @@ export default {
 </script>
 
 <style scoped>
+ol#songlist li{
+    margin: 0.5rem auto;
+}
+
+p#description{
+    margin: 0.25rem 0 0.5rem 10px;
+    white-space: pre-line;
+}
+
 .iframe-wrap{
     padding-left: 10px;
 }
