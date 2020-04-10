@@ -2,23 +2,32 @@
   <div class="main">
     <h1>新歓特設ページ</h1>
     <p>
-      2020年度、前期の新歓の詳細については、コロナウイルス流行の影響により、現在(2020/3/28)協議中です。<br>
-      サークル内での決定の後にTwitterと、このページでお知らせします。
+      2020年度、前期の新歓の詳細については、コロナウイルス流行の影響により、現在(2020/4/10)協議中です。<br>
+      サークル内での決定の後にTwitterと、このページでお知らせします。<br>
+      (4月中の新歓は行わないことに決定しました。5月に新歓は開催予定ではありますが、流行の状況により変更となる可能性が大きいです。)<br>
     </p>
+    <ul>
+      <li>2020/4/10 <nuxt-link to="/movie">動画ページ</nuxt-link>を公開しました</li>
+    </ul>
     <h2>新歓ビラ2020</h2>
     <img src="/uploads/2020_flyer.jpg" alt="" title="新歓ビラ2020" class="img-fluid" />
     <p>
       京都大学からの新歓自粛要請を踏まえ、アンプラは予定していたビラ配布を中止します…<br>
       5月から新歓を再開する予定ですが、状況によっては変更する場合もあるので、<br>
       随時変更をtwitterやHPで確認してください！！<br>
-      （ビラの内容は2020/3/31現在のものです）
+      （ビラの内容は2020/3/31現在のものです）<br>
     </p>
+    <h2>ライブ動画</h2>
     <p>
-      お問い合わせの方は
-      <a href="mailto:info@ku-unplugged.net">メール(info@ku-unplugged.net)</a>
-      <br />
-      <br />又はtwitter[DM] までお気軽に連絡して下さい!
-      <br />
+      お待たせしました！<br>
+      アンプラで行われたライブのうち、いくつかを公開します！<br>
+      動画ページは<nuxt-link to="/movie">こちら</nuxt-link>！<br>
+    </p>
+    <h2>そのほか</h2>
+    <p>
+      お問い合わせの方は<a href="mailto:info@ku-unplugged.net">メール(info@ku-unplugged.net)</a><br>
+      <br>
+      又はtwitter[DM] までお気軽に連絡して下さい!<br>
       <a
         class="twitter-follow-button"
         href="https://twitter.com/kyodaiunplugged"
