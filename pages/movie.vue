@@ -1,13 +1,13 @@
 <template>
   <div class="main">
     <h1>ライブ映像</h1>
-    <p>何かこのへんに説明文あるといいかも？</p>
+    <p>アンプラで演奏したライブの映像です！</p>
     <ol id="songlist">
         <li v-for="movie in movies" :key="movie.url">
             <a :href="'#' + movie.url">{{movie.title}}</a>
         </li>
     </ol>
-    <p>こっちにも文章はおける</p>
+    <!-- <p>こっちにも文章はおける</p> -->
     <div v-for="(movie, index) in movies" :key="movie.url">
         <h2 :id="movie.url">{{index + 1}}. {{movie.title}}</h2>
         <div class="iframe-wrap">
@@ -30,20 +30,31 @@
 export default {
     data: () => {
         return {
-            movies: [
+            movies: [//descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
                 {
-                    title: 'ラビューラビュー / ポルノグラフィティ',
-                    url: 'bkScuc1PBmU',
-                    description: `この辺に曲に関する説明文
-                        ほげほげ
-                        ほげほげほげ`,
-                },//改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
+                    title: 'Sing / Goose house',
+                    url: 'FHNdK0cV10g',
+                    description: ``,
+                },
                 {
-                    title: '君と歩いた季節 / いきものがかり',
-                    url: 'Y0Ho9tFjL3g',
-                    description: `ふがふが
-                        ぐがふが
-                        ほげ`,
+                    title: '今、咲き誇る花たちよ / コブクロ',
+                    url: 'B_nsyqAKmlI',
+                    description: ``,
+                },
+                {
+                    title: 'Never Ending World / SEKAI NO OWARI',
+                    url: 'dAErc5htcVQ',
+                    description: ``,
+                },
+                {
+                    title: 'ダンスロボットダンス / ナユタン星人',
+                    url: '_YIwKWJXUqo',
+                    description: ``,
+                },
+                {
+                    title: '赤いスイートピー / 松田聖子',
+                    url: 'ywpIHjFnz90',
+                    description: ``,
                 },
                 
             ],
