@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main mb-5">
     <h1>ライブ映像</h1>
     <p>
         アンプラで演奏したライブの映像です！<br>
@@ -37,37 +37,39 @@ export default {
                 {
                     title: 'Revive / 倉木麻衣',
                     url: 'ddCry1mYA9I',
-                    description: ``,
+                    description: `コナンのOP曲だったカッコイイ曲です！
+                        トライアングルやアサラトといった一風変わった打楽器が登場します`,
                 },
                 {
                     title: '日曜日のラブレター / Official髭男dism',
                     url: 'qp87Nn4YB0M',
-                    description: ``,
+                    description: `ヒゲダンの曲を金管楽器2本を入れた編成でかっこよくカバーしています！`,
                 },
                 {
                     title: 'Sing / Goose house',
                     url: 'FHNdK0cV10g',
-                    description: ``,
+                    description: `Goose houseの代表曲を歌うま達が見事にカバー！これぞアンプラ！`,
                 },
                 {
                     title: '今、咲き誇る花たちよ / コブクロ',
                     url: 'B_nsyqAKmlI',
-                    description: ``,
+                    description: `フルートとリコーダーのハーモニーにぜひ注目してください！`,
                 },
                 {
                     title: 'Never Ending World / SEKAI NO OWARI',
                     url: 'dAErc5htcVQ',
-                    description: ``,
+                    description: `弦楽器3本をいれた豪華編成でセカオワの曲を演奏しています！`,
                 },
                 {
                     title: 'ダンスロボットダンス / ナユタン星人',
                     url: '_YIwKWJXUqo',
-                    description: ``,
+                    description: `アンプラでボカロは難しい…と思いきや、実は人気ジャンル！
+                        ナユタン星人の曲をかっこよくアレンジしています！`,
                 },
                 {
                     title: '赤いスイートピー / 松田聖子',
                     url: 'ywpIHjFnz90',
-                    description: ``,
+                    description: `ボーカル、ピアノ、ギターの少人数編成が映える松田聖子の大ヒット曲です`,
                 },
                 
             ],
