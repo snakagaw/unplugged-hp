@@ -1,7 +1,10 @@
 <template>
   <div class="main">
     <h1>ライブ映像</h1>
-    <p>アンプラで演奏したライブの映像です！</p>
+    <p>
+        アンプラで演奏したライブの映像です！<br>
+        すこしでもアンプラの雰囲気を知ってもらえたら幸いです！    
+    </p>
     <ol id="songlist">
         <li v-for="movie in movies" :key="movie.url">
             <a :href="'#' + movie.url">{{movie.title}}</a>
@@ -31,6 +34,16 @@ export default {
     data: () => {
         return {
             movies: [//descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
+                {
+                    title: 'Revive / 倉木麻衣',
+                    url: 'ddCry1mYA9I',
+                    description: ``,
+                },
+                {
+                    title: '日曜日のラブレター / Official髭男dism',
+                    url: 'qp87Nn4YB0M',
+                    description: ``,
+                },
                 {
                     title: 'Sing / Goose house',
                     url: 'FHNdK0cV10g',
