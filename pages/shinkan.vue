@@ -7,7 +7,7 @@
       (4月中の新歓は行わないことに決定しました。5月に新歓は開催予定ではありますが、流行の状況により変更となる可能性が大きいです。)<br>
     </p>
     <ul>
-      <li>2020/4/10 <nuxt-link to="/movie">動画ページ</nuxt-link>を公開しました</li>
+      <li>2020/4/14 <nuxt-link to="/movie">動画ページ</nuxt-link>を公開しました</li>
     </ul>
     <h2>新歓ビラ2020</h2>
     <img src="/uploads/2020_flyer.jpg" alt="" title="新歓ビラ2020" class="img-fluid" />
