@@ -14,6 +14,11 @@
       最大のライブは、京都大学の学園祭であるNFです。 4日間を通して多くの曲を路上ライブで行います。 2019年度のNFでは4日間で200曲程演奏しました。 <br>
       アンプラでは基本的に固定バンドを組まず、曲ごとに編成を変えて演奏する形なので幅広いジャンルをいろんな人と演奏できます。<br>
     </p>
+    <p class="link-next">
+      <nuxt-link to="/movie">
+        <font-awesome-icon icon="arrow-alt-circle-right" />過去のライブで演奏された曲を見る
+      </nuxt-link>
+    </p>
     <!-- TODO: LiveLogに変える...? -->
     <!-- <p class="link-next">
       <a href="http://ku-unplugged.net/old/lives/live_index.html" target="_blank">
