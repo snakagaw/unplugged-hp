@@ -15,21 +15,21 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
-    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/moment": "^1.6.0",
-    "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxtjs/sitemap": "^2.2.1",
     "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.9.0",
-    "firebase-tools": "^7.16.1",
-    "nuxt": "^2.12.1",
+    "bootstrap-vue": "^2.13.0",
+    "firebase-tools": "^8.2.0",
+    "nuxt": "^2.12.2",
     "nuxt-fontawesome": "^0.4.0",
     "processmd": "^4.5.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "nodemon": "^2.0.2",
-    "prettier": "^2.0.2"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5"
   }
 }
