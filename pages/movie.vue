@@ -135,6 +135,13 @@ export default {
   methods: {
     youtubeURL: (id) => 'https://www.youtube.com/embed/' + id,
   },
+   head () {
+    return {
+      meta: [
+        { hid: 'twitter-description', name: 'og:description', content: '京大アンプラグドで、過去に演奏された動画を公開しています。' }
+      ]
+    }
+  }
 }
 </script>
 
