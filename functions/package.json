@@ -21,6 +21,7 @@
     "firebase-functions": "^3.6.1"
   },
   "devDependencies": {
+    "@types/request": "^2.48.4",
     "tslint": "^6.1.2",
     "typescript": "^3.8.3"
   },
