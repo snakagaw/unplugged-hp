@@ -1,5 +1,4 @@
 {
-  "eslint.autoFixOnSave": true,
   "prettier.semi": true,
   "prettier.singleQuote": false,
   "vetur.format.defaultFormatter.js": "prettier",
