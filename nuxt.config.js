@@ -37,6 +37,26 @@ export default {
         name: 'keywords',
         content: '京大, サークル, 軽音, アンプラグド, アコースティック',
       },
+      {
+        hid: 'twitter-card-type',
+        name: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        hid: 'twitter-site-creator',
+        name: 'twitter:creator',
+        content: '@kyodaiunplugged'
+      },
+      {
+        hid: 'twitter-title',
+        name: 'og:title',
+        content: '京大アンプラグド'
+      },
+      {
+        hid: 'twitter-description',
+        name: 'og:description',
+        content: process.env.npm_package_description || '',
+      }
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
