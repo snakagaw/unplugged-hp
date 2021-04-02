@@ -10,7 +10,7 @@
     <ul>
       <li>2020/4/15 <nuxt-link to="/movie">動画ページ</nuxt-link>を公開しました</li>
     </ul>
-    <h2>新歓ビラ2020</h2>
+    <h2>新歓ビラ2021</h2>
     <img src="/uploads/2021_flyer.pdf" alt="" title="新歓ビラ2021" class="img-fluid" />
     <p>
       2021年度のビラです！配布はしてますが，こちらで見てもOK！<br>
