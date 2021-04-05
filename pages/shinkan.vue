@@ -5,16 +5,16 @@
       2021年度、前期の新歓の詳細については、コロナウイルス流行の影響により、対面またはZoomで交流会を行います！<br>
       細かい日時は下のビラで見てみてください！<br>
       対面かZoomのどちらかで行うかは，前日までにこのHPまたはtwitterでお知らせします！<br>
-      4/12の交流会は【Zoom】で行います。
+      4/12,4/18,4/23の交流会は【Zoom】で行います。
     </p>
     <ul>
-      <li>2020/4/15 <nuxt-link to="/movie">動画ページ</nuxt-link>を公開しました</li>
+      <li>新歓の参加申し込みは<a href="https://docs.google.com/forms/d/e/1FAIpQLSeT7Bjv5nDI6Dqo0jDLitAgQCnMT3ZdqECf_53U8Q1nsqc1Zw/viewform">こちら</a>から！</li>
     </ul>
     <h2>新歓ビラ2021</h2>
-    <img src="/uploads/2021_flyer.pdf" alt="" title="新歓ビラ2021" class="img-fluid" />
+    <img src="/uploads/2021_flyer.jpg" alt="" title="新歓ビラ2021" class="img-fluid" />
     <p>
       2021年度のビラです！配布はしてますが，こちらで見てもOK！<br>
-      新歓を対面で行うかzoomで行うかは，<br>
+      新歓を対面で行うかZoomで行うかは，<br>
       随時変更をtwitterやHPで確認してください！！<br>
       （ビラの内容は2021/4/1現在のものです）<br>
     </p>
