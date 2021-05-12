@@ -8,9 +8,8 @@
     </p>
     <ul>
       <li>新歓の参加申し込みは<a href="https://docs.google.com/forms/d/e/1FAIpQLSeT7Bjv5nDI6Dqo0jDLitAgQCnMT3ZdqECf_53U8Q1nsqc1Zw/viewform">こちら</a>から！</li>
-      <li>[確定]4/26,5/7の交流会は【Zoom】で行います。</li>
-      <li>[未定]なし</li>
-      <li>[New]5/14に【Zoom】で入会説明会を行います。入会説明会の参加申し込みは<a href="https://docs.google.com/forms/d/e/1FAIpQLSeT7Bjv5nDI6Dqo0jDLitAgQCnMT3ZdqECf_53U8Q1nsqc1Zw/viewform">こちら</a>からできます！</li>
+      <li>[確定]5/14の入会説明会#1は【Zoom】で行います。</li>
+      <li>[未定]これ以降の新歓と入会説明会も考えていますのでお待ちください！</li>
     </ul>
     <h2>新歓ビラ2021</h2>
     <img src="/uploads/2021_flyer.jpg" alt="" title="新歓ビラ2021" class="img-fluid" />
