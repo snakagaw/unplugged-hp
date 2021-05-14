@@ -18,7 +18,7 @@ const generateDynamicRoutes = callback => {
 
 // 設定. デフォのを読み込んでる.
 export default {
-  mode: 'universal',
+  ssr: true,
   /*
    ** Headers of the page
    */
