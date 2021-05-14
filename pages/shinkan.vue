@@ -7,17 +7,16 @@
       対面かZoomのどちらかで行うかは，前日までにこのHPまたはtwitterでお知らせします！<br>
     </p>
     <ul>
-      <li>新歓の参加申し込みは<a href="https://docs.google.com/forms/d/e/1FAIpQLSeT7Bjv5nDI6Dqo0jDLitAgQCnMT3ZdqECf_53U8Q1nsqc1Zw/viewform">こちら</a>から！</li>
-      <li>[確定]5/14の入会説明会#1は【Zoom】で行います。</li>
-      <li>[未定]これ以降の新歓と入会説明会も考えていますのでお待ちください！</li>
+      <li>新歓・入会説明会の参加申し込みは<a href="https://docs.google.com/forms/d/e/1FAIpQLSeT7Bjv5nDI6Dqo0jDLitAgQCnMT3ZdqECf_53U8Q1nsqc1Zw/viewform">こちら</a>から！</li>
+      <li>[確定]5/23の新歓#6と5/28の入会説明会#2は【Zoom】で行います。</li>
     </ul>
     <h2>新歓ビラ2021</h2>
-    <img src="/uploads/2021_flyer.jpg" alt="" title="新歓ビラ2021" class="img-fluid" />
+    <img src="/uploads/2021_flyer_1.jpg" alt="" title="新歓ビラ2021" class="img-fluid" />
     <p>
       2021年度のビラです！配布はしてますが，こちらで見てもOK！<br>
       新歓を対面で行うかZoomで行うかは，<br>
       随時変更をtwitterやこのHPで確認してください！！<br>
-      （ビラの内容は2021/4/1現在のものです）<br>
+      （ビラの内容は2021/5/15現在のものです）<br>
     </p>
     <h2>ライブ動画</h2>
     <p>
