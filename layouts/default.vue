@@ -13,7 +13,7 @@
           です.
         </span>
         <span v-if="$nuxt.$route.name !== 'meeting-room'">
-          一覧は<nuxt-link to="/meeting-room">こちら</nuxt-link>
+          一覧は<a href="https://message.ku-unplugged.net/meeting_room/" target="_blank">こちら</a>
         </span>
       </b-col>
     </b-row>

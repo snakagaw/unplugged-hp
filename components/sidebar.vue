@@ -19,7 +19,7 @@
             </span>
           </span>
           <br /><br />
-          <nuxt-link to="/meeting-room">今月の例会教室はこちら</nuxt-link>
+          <a href="https://message.ku-unplugged.net/meeting_room/" target="_blank">今月の例会教室はこちら</a>
         </div>
       </li>
       <li class="sidebar-item">
@@ -104,7 +104,7 @@ export default {
   },
   created: function() {
     this.$axios
-      .$get('https://meetingroomcontroller.appspot.com/room/today')
+      .$get('https://message.ku-unplugged.net/api/meeting_room/today/')
       // .$get('http://localhost:8009/room/today')
       .then(res => {
         this.todayRoom = res.room
