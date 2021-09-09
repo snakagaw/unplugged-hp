@@ -3,9 +3,7 @@
     <h1>会員</h1>
     <h2>例会教室お知らせについて</h2>
     <p>
-      <nuxt-link to="/posts/2017-12-29/meeting_room">登録手順はこちら</nuxt-link
-      ><br />
-      <nuxt-link to="/meeting-room">今月の例会教室はこちら</nuxt-link><br />
+      <a href="https://message.ku-unplugged.net/meeting_room/" target="_blank">今月の例会教室はこちら</a>
     </p>
     <h2>ピアノシフトについて</h2>
     <p>

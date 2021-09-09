@@ -105,9 +105,9 @@ export default {
   created: function() {
     this.$axios
       .$get('https://message.ku-unplugged.net/api/meeting_room/today/')
-      // .$get('http://localhost:8009/room/today')
+      // .$get('http://localhost:8000/api/meeting_room/today/')
       .then(res => {
-        this.todayRoom = res.room
+        this.todayRoom = res.room == null ? "終日使用不可" : res.room
         this.today = res.date
         this.yesterday = res['date-before']
         this.yesterdayRoom = res['room-before']

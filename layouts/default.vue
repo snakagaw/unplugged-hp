@@ -47,10 +47,9 @@ export default {
   },
   created: function() {
     this.$axios
-      .$get('https://meetingroomcontroller.appspot.com/room/today')
-      // .$get('http://localhost:8009/room/today')
+      .$get('https://message.ku-unplugged.net/api/meeting_room/today/')
       .then(res => {
-        this.room = res.room
+        this.room = res.room == null ? "終日使用不可" : res.room
       })
   },
   filters: {
