@@ -1,12 +1,16 @@
 <template>
   <div class="main">
     <h1>新歓特設ページ</h1>
+    <h2>2022年度の新歓について</h2>
     <p>
-      2022年度はたくさん新入生が入るといいですね！
+      2022年度の新歓はTwitterやLINEのオープンチャットを用いて連絡しています！<br>
+      オープンチャットに参加の場合は，<a href="https://docs.google.com/forms/d/1fIuueKW7MYjuA-HD2DdwTfMOkuQAwy4V0sxf2zegL08/viewform?edit_requested=true">ここ</a>から！
+      Twitterの質問箱でも質問を募集しています！連絡をお待ちしています！
     </p>
     
-    <h2>新歓ビラ2021</h2>
-    <img src="/uploads/2021_flyer_1.jpg" alt="" title="新歓ビラ2021" class="img-fluid" />
+    <h2>新歓ビラ2022</h2>
+    <img src="/uploads/2022_flyer_1.jpg" alt="" title="新歓ビラ2022" class="img-fluid" />
+    <img src="/uploads/2022_flyer_2.jpg" alt="" title="新歓ビラ2022" class="img-fluid" />
     <h2>ライブ動画</h2>
     <p>
       お待たせしました！<br>
