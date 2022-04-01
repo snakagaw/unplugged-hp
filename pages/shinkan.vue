@@ -4,7 +4,7 @@
     <h2>2022年度の新歓について</h2>
     <p>
       2022年度の新歓はTwitterやLINEのオープンチャットを用いて連絡しています！<br>
-      オープンチャットに参加の場合は，<a href="https://docs.google.com/forms/d/1fIuueKW7MYjuA-HD2DdwTfMOkuQAwy4V0sxf2zegL08/viewform?edit_requested=true">ここ</a>から！<br>
+      オープンチャットに参加の場合は<a href="https://docs.google.com/forms/d/1fIuueKW7MYjuA-HD2DdwTfMOkuQAwy4V0sxf2zegL08/viewform?edit_requested=true">ここ</a>から！<br>
       Twitterの質問箱でも質問を募集しています！連絡をお待ちしています！
     </p>
     
