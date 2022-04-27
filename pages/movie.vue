@@ -38,19 +38,18 @@ export default {
         //descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
         {
           title: '怪獣の花唄 / Vaundy',
-          id: 'xOklTf9cpgQ',//2022 あけおめライブ 04
+          id: 'wE3D8QZXHJI',//2022 あけおめライブ 04
           description: `Vaundyの中でも有名な曲を歌っています！こんな曲でも演奏できるんですよ〜。`,
         },
         {
           title: '旅は道連れ / Official髭男dism',
-          id: 'NpYOSmTa62g',//2022 3月ライブ 07
+          id: '48-xK42CDSI',//2022 3月ライブ 07
           description: `5人全員で歌っています。まるで本当のライブの様な演出です。`,
         },
         {
-          title: 'Revive / 倉木麻衣',
-          id: 'ddCry1mYA9I',//2019 NF3日目 13:30 23
-          description: `コナンのOP曲だったカッコイイ曲です！
-                        トライアングルやアサラトといった一風変わった打楽器が登場します`,
+          title: '炎と森のカーニバル / SEKAI NO OWARI',
+          id: 'aXAmu10saXg',//2019 NF3日目 13:30 23
+          description: `バイオリン・フルート・クラリネットの管弦楽器が豪華ですね。アンプラではこのようなバンドもできますよ〜。`,
         },
         {
           title: '日曜日のラブレター / Official髭男dism',
