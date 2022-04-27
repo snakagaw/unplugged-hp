@@ -37,9 +37,9 @@ export default {
       movies: [
         //descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
         {
-          title: 'だから僕は音楽を辞めた / ヨルシカ',
-          id: 'bz5A16-ErBw',//2019 NF2日目 14:30 29
-          description: `ヨルシカ、今アンプラでブームきてます…！やってみたいという方、ぜひアンプラでやりましょう！`,
+          title: '怪獣の花唄 / Vaundy',
+          id: 'xOklTf9cpgQ',//2021-22 あけおめライブ 04
+          description: `Vaundyの中でも有名な曲を歌っています！こんな曲でも演奏できるんですよ〜。`,
         },
         {
           title: 'GUTS！ / 嵐',
