@@ -38,13 +38,13 @@ export default {
         //descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
         {
           title: '怪獣の花唄 / Vaundy',
-          id: 'xOklTf9cpgQ',//2021-22 あけおめライブ 04
+          id: 'xOklTf9cpgQ',//2022 あけおめライブ 04
           description: `Vaundyの中でも有名な曲を歌っています！こんな曲でも演奏できるんですよ〜。`,
         },
         {
-          title: 'GUTS！ / 嵐',
-          id: '0kUZ0IxtAas',//2019 NF3日目 13:00 21
-          description: `嵐の曲を超大編成、ダンスありでカバーしました！見ているこっちが楽しくなります！`,
+          title: '旅は道連れ / Official髭男dism',
+          id: 'NpYOSmTa62g',//2022 3月ライブ 07
+          description: `5人全員で歌っています。まるで本当のライブの様な演出です。`,
         },
         {
           title: 'Revive / 倉木麻衣',
