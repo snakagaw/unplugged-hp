@@ -48,24 +48,23 @@ export default {
         },
         {
           title: '炎と森のカーニバル / SEKAI NO OWARI',
-          id: 'aXAmu10saXg',//2019 NF3日目 13:30 23
+          id: 'aXAmu10saXg',//2021　秋ライブ#1　04
           description: `バイオリン・フルート・クラリネットの管弦楽器が豪華ですね。アンプラではこのようなバンドもできますよ〜。`,
         },
         {
-          title: '日曜日のラブレター / Official髭男dism',
-          id: 'qp87Nn4YB0M',//2019 NF4日目 13:30 22
-          description: `ヒゲダンの曲を金管楽器2本を入れた編成でかっこよくカバーしています！`,
+          title: 'ラブカ？ / 柊キライ',
+          id: 'lBKUaNUETG0',//2022 3月ライブ 02
+          description: `難しいボカロの曲を上手くアレンジしています。`,
         },
         {
-          title: '桜と月（オリジナル曲）',
-          id: '43R0ddg65pg',//2019 NF4日目 16:00 35
-          description: `アンプラ会員によるオリジナル曲です！
-                        オリジナル曲をつくってみたい、演奏してみたいという方はぜひお越しください！`,
+          title: '雨とカプチーノ / ヨルシカ',
+          id: 'wAzzQVW1nFA',//2022　2月ライブ#1　04
+          description: `アンプラではヨルシカがかなり流行っている様です。`,
         },
         {
-          title: 'A.I. Am Human / MONKEY MAJIK',
-          id: 'coqbzgCor2w',//2019 6月ライブ 1
-          description: `バウロンやウクレレ、グロッケンなど、珍しい楽器も入った9人の大人数バンドです！`,
+          title: 'FUNNY GOLD / Suchmos',
+          id: 'rxec9Lo_AR0',//2022 3月ライブ 03
+          description: `Suchmosは難しいかと思いきや！？雰囲気のある演奏です。`,
         },
         {
           title: 'Lovers / sumika',
