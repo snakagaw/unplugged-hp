@@ -90,3 +90,4 @@ dist
 # unplugged-hp
 summary.json
 output/
+.output/
