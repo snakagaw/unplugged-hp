@@ -15,7 +15,7 @@
         <b-navbar-brand to="/">
           <img
             class="brand"
-            src="~assets/brand_icon.png"
+            src="~assets/brand_icon2.png"
             alt="京大アンプラグド"
             width="240"
           />
