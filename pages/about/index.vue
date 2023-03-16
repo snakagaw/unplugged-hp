@@ -5,7 +5,7 @@
     <p>
       サークル名の「アンプラグド」とはそもそもどういう意味なのか。
       <br />このサークルが創設された理由から目的までを説明します。
-      <link-next href="/about/what_is_unplugged/" text="“アンプラグド”とは<font-awesome-icon icon="arrow-alt-circle-right"　size="lg" />" />
+      <link-next href="/about/what_is_unplugged/" text="“アンプラグド”とは" />
     </p>
     <h2>活動紹介</h2>
     <p>
