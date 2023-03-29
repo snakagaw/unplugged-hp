@@ -1,8 +1,7 @@
 <template>
   <div class="link-next">
     <nuxt-link :to="href">
-      {{text}}
-      <font-awesome-icon icon="arrow-alt-circle-right"　size="lg" />
+      {{text}
     </nuxt-link>
   </div>
 </template>
