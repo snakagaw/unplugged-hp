@@ -1,7 +1,7 @@
 <template>
   <div class="link-next">
     <nuxt-link :to="href">
-      {{text}
+      {{text}}
     </nuxt-link>
   </div>
 </template>
