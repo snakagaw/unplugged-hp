@@ -10,7 +10,7 @@
     
     <h2>新歓ビラ2023</h2>
     <p>
-      ビラも決まり次第、更新していきます!!
+      <img src="/uploads/2023_flyer.jpg" alt="" title="新歓ビラ2023" class="img-fluid" />
     </p>
     
     <h2>ライブ動画</h2>
