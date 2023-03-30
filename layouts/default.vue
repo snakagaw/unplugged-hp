@@ -7,17 +7,6 @@
       style="width:100%"
     />
     <b-row>
-      <b-col>
-        <span v-if="room">
-          例会教室は<b>{{ room }}</b>
-          です.
-        </span>
-        <span v-if="$nuxt.$route.name !== 'meeting-room'">
-          一覧は<a href="https://message.ku-unplugged.net/meeting_room/" target="_blank">こちら</a>
-        </span>
-      </b-col>
-    </b-row>
-    <b-row>
       <b-col md="8">
         <nuxt />
       </b-col>
