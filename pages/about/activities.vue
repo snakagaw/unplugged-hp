@@ -16,13 +16,13 @@
     </p>
     <p class="link-next">
       <nuxt-link to="/movie">
-        <font-awesome-icon icon="arrow-alt-circle-right" />過去のライブで演奏された曲を見る
+        過去のライブで演奏された曲を見る
       </nuxt-link>
     </p>
     <!-- TODO: LiveLogに変える...? -->
     <!-- <p class="link-next">
       <a href="http://ku-unplugged.net/old/lives/live_index.html" target="_blank">
-        過去のライブで演奏された曲を見る
+        <font-awesome-icon icon="arrow-alt-circle-right" />過去のライブで演奏された曲を見る
       </a>
     </p> -->
     <!-- movieページができあがったらとりあえずそっちに -->
