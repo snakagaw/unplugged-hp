@@ -2,11 +2,16 @@
   <div class="main">
     <h1>お問い合わせ</h1>
     <p>
-      以下のメールアドレスにご連絡ください。
+      <a href="mailto:info@ku-unplugged.net">公式連絡先(info@ku-unplugged.net)</a><br>
       <br />
-      <a href="mailto:info@ku-unplugged.net">公式連絡先(info@ku-unplugged.net)</a>
-      お気軽にどうぞ！
-      <br />
+      又はtwitter［DM］までお気軽に連絡して下さい!<br>
+      <a
+        class="twitter-follow-button"
+        href="https://twitter.com/kyodaiunplugged"
+        data-show-count="false"
+        data-lang="ja"
+        data-size="large"
+      >@kyodaiunpluggedをフォロー</a>
     </p>
   </div>
 </template>
