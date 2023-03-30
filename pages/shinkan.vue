@@ -3,8 +3,8 @@
     <h1>新歓特設ページ</h1>
     <h2>2023年度の新歓について</h2>
     <p>
-      2023年度の新歓はTwitterやLINEオープンチャットを用いて連絡しています！<br>
-      オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここ</a>から<br>
+      2023年度の新歓はTwitterやLINEオープンチャットを用いて連絡しています。<br>
+      オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここ</a>から!!<br>
       Twitterの質問箱でも質問を募集しています！連絡をお待ちしています！
     </p>
     
