@@ -22,6 +22,13 @@
         data-show-count="false"
         >Follow @ku_unplugged_hp</a
       >
+      <a
+        class="twitter-follow-button"
+        href="https://twitter.com/kyodaiunplugged"
+        data-show-count="false"
+        data-lang="ja"
+        data-size="large"
+      >@kyodaiunpluggedをフォロー</a>
       <script
         async
         src="https://platform.twitter.com/widgets.js"
