@@ -1,34 +1,5 @@
 <template>
   <div class="footer">
-    <b-container class>
-      <b-row>
-        <b-col md>
-          <h3>最近のブログ投稿</h3>
-          <ul>
-            <li>
-              <nuxt-link :to="allPosts[0].url">{{allPosts[0].title}}</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link :to="allPosts[1].url">{{allPosts[1].title}}</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link :to="allPosts[2].url">{{allPosts[2].title}}</nuxt-link>
-            </li>
-          </ul>
-        </b-col>
-        <b-col md>
-          <h3>ブログ年別アーカイブ</h3>
-          <select v-model="selectedYear">
-            <option :value="null" selected="selected">年を選択</option>
-            <option v-for="year in $years.years" :key="year" :value="year">{{ year }}</option>
-          </select>
-        </b-col>
-        <b-col md>
-          <h3>検索</h3>
-          <n-link to="/search/">検索はこちら</n-link>
-        </b-col>
-      </b-row>
-    </b-container>
     <b-container class="text-center">
       <b-row>
         <b-col>©︎ 2023 京大アンプラグド</b-col>
