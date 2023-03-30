@@ -2,33 +2,6 @@
   <div class="sidebar">
     <ul>
       <li class="sidebar-item">
-        <h3>例会教室</h3>
-        <div class="textwidget">
-          <span v-if="today">
-            <span v-if="yesterday">
-              本日({{ yesterday | md }})の AM 5:00までの例会教室は <br />
-              <b>{{ yesterdayRoom }}</b
-              >,<br /><br />
-              本日({{ today | md }})の例会教室は
-              <br />
-              <b>{{ todayRoom }}</b> です.
-            </span>
-            <span v-else>
-              本日({{ today | md }})の例会教室は <br />
-              <b>{{ todayRoom }}</b> です.
-            </span>
-          </span>
-          <br /><br />
-          <a href="https://message.ku-unplugged.net/meeting_room/" target="_blank">今月の例会教室はこちら</a>
-        </div>
-      </li>
-      <li class="sidebar-item">
-        <h3>最近の活動</h3>
-        <div class="textwidget">
-          <nuxt-link :to="allPosts[0].url">{{ allPosts[0].title }}</nuxt-link>
-        </div>
-      </li>
-      <li class="sidebar-item">
         <h3>twitter</h3>
         <div>
           <a
@@ -43,18 +16,6 @@
             src="https://platform.twitter.com/widgets.js"
             charset="utf-8"
           ></script>
-        </div>
-      </li>
-      <li class="sidebar-item">
-        <h3>ブログカテゴリー</h3>
-        <div>
-          <ul class="list">
-            <li v-for="(posts, category) in $categories" :key="posts.length">
-              <nuxt-link :to="`/categories/${category}`">{{
-                category
-              }}</nuxt-link>
-            </li>
-          </ul>
         </div>
       </li>
     </ul>
