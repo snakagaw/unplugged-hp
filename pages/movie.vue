@@ -37,9 +37,9 @@ export default {
       movies: [
         //descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
         {
-          title: '怪獣の花唄 / Vaundy',
-          id: 'wE3D8QZXHJI',//2022 あけおめライブ 04
-          description: `Vaundyの中でも有名な曲を歌っています！こんな曲でも演奏できるんですよ〜。`,
+          title: '桜の森 / 星野源',
+          id: 'GB_BsxYwL50',//2022 新歓ライブ#3 2
+          description: `星野源の曲をフルート・クラリネット・ホルンを用いて演奏しています。アンプラでしかできないバンドです。`,
         },
         {
           title: '旅は道連れ / Official髭男dism',
