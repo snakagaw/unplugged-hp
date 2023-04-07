@@ -38,94 +38,93 @@ export default {
         //descriptionの改行はwhite-space: pre-line;によるので、行のはじめに要注意です。
         {
           title: '桜の森 / 星野源',
-          id: 'GB_BsxYwL50',//2022 新歓ライブ#3 2
-          description: `星野源の曲をフルート・クラリネット・ホルンを用いて演奏しています。アンプラでしかできないバンドです。`,
+          id: 'GB_BsxYwL50',//2022 新歓ライブ#3 02
+          description: `去年の新歓ライブでの演奏です！星野源の曲をフルート・クラリネット・ホルンを用いて演奏しています。アンプラでしかできない楽器構成です！`,
         },
         {
-          title: '旅は道連れ / Official髭男dism',
-          id: '48-xK42CDSI',//2022 3月ライブ 07
-          description: `5人全員で歌っています。まるで本当のライブの様な演出です。`,
+          title: '歌うたいのバラッド / 斉藤和義',
+          id: 'BJSbAYe4EvA',//2022 9月下旬ライブ 04
+          description: `名曲をギター１本とボーカル２人で、美しくもノスタルジックな演奏に仕上げています。`,
         },
         {
-          title: '炎と森のカーニバル / SEKAI NO OWARI',
-          id: 'aXAmu10saXg',//2021　秋ライブ#1　04
-          description: `バイオリン・フルート・クラリネットの管弦楽器が豪華ですね。アンプラではこのようなバンドもできますよ〜。`,
+          title: '情熱大陸 / 葉加瀬太郎',
+          id: 'wmOzkqVKLwU',//2022　NF4日目 16
+          description: `迫力のあるインストバンドです！曲中、バイオリン・ギター・ベース・カホン・ピアノ全ての楽器にそれぞれあるソロパートが見所です！`,
         },
         {
-          title: 'ラブカ？ / 柊キライ',
-          id: 'lBKUaNUETG0',//2022 3月ライブ 02
-          description: `難しいボカロの曲を上手くアレンジしています。`,
+          title: '異端なスター / Official髭男dism',
+          id: 'MoO2c6KU3gg',//2022 クリスマスライブ 02
+          description: `アンプラでもやはりヒゲダンは人気です！`,
         },
         {
-          title: '雨とカプチーノ / ヨルシカ',
-          id: 'wAzzQVW1nFA',//2022　2月ライブ#1　04
-          description: `アンプラではヨルシカがかなり流行っている様です。`,
+          title: '1999 / 羊文学',
+          id: '7CnLaTvsz4I',//2022　クリスマスライブ　09
+          description: `アコースティックギター・ベース・カホンのアンプラらしいシンプルな３ピースですね。アンプラではこのように全員でコーラスをすることもあります！`,
         },
         {
-          title: 'FUNNY GOLD / Suchmos',
-          id: 'rxec9Lo_AR0',//2022 3月ライブ 03
-          description: `Suchmosは難しいかと思いきや！？雰囲気のある演奏です。`,
+          title: 'I knew you were trouble / Taylor Swift',
+          id: 'hlYt0850oC8',//2022 NF4日目 11
+          description: `洋楽、テイラー・スウィフトの楽曲もカッコ良く歌い上げています！`,
+        },
+      nTdeDE_Ft9o
+          title: 'ベルベットの詩 / back number',
+          id: 'nTdeDE_Ft9o',//2022 NF4日目 07
+          description: `映画の主題歌にもなったback numberの楽曲を去年のNFで演奏しました！`,
         },
         {
-          title: 'Lovers / sumika',
-          id: 'KpGDLJaldOI',//2019 新歓ライブ#4 3
-          description: `アンプラではコーラスをつけることも多いです！なんと、この曲ではVo.以外の全員がコーラス担当です！`,
+          title: '君がくれた夏 / 家入レオ',
+          id: 'V-c0FVH9uvX00',//2022 NF4日目 13
+          description: `アコギが良く似合う家入レオの一曲です。`,
         },
         {
-          title: '三日月 / 絢香×玉置浩二',
-          id: 'V-eEppoYoow',//2019 新歓ライブ#5 3
-          description: `このように楽器１つでもアレンジ次第で素晴らしい演奏をすることができるのもアンプラの魅力です！`,
+          title: 'ひまわりの約束 / 秦基博',
+          id: 'sGyJ1sdj3mM',//2019 6月ライブ 8
+          description: `ボーカルとギター&ハモリの２人で紡ぐ美しい演奏は必聴です。`,
         },
         {
-          title: 'ハレルヤ!!!! / GReeeeN',
-          id: 'QvTyq_hChVo',//2019 6月ライブ 8
-          description: `コールアンドレスポンスなどの工夫で観客と共に音楽を楽しむことができます。楽しい雰囲気が伝わってきます！`,
+          title: '青春病 / 藤井風',
+          id: '',//2022 NF1日目
+          description: ``,
         },
         {
-          title: 'コイワズライ / Aimer',
-          id: 'PCg6uu_hRnk',//2019 9月ライブ 5
-          description: `Aimerの曲をアコースティックな雰囲気満載でカバーしています。ボーカルの美しい歌声は必聴です！`,
+          title: 'Spirited Away Medley ～千と千尋の神隠し / 久石譲',
+          id: 'DUnKqPVI_n4',//2022 新歓ライブ#1 01
+          description: `去年の新歓ライブの様子です！他の軽音サークルではまず見られない楽器構成・インスト・雰囲気をぜひご覧ください。`,
         },
         {
-          title: 'daze / じん feat.メイリア from GARNiDELiA',
-          id: 'e6nYr-kVaXk',//2019 新歓路上ライブ#1 1
-          description: `去年の新歓路上ライブの様子です！カゲプロのアニメOP曲を、バイオリンありで演奏しています🎻アンプラならではのアレンジです！`,
+          title: 'The Path to Phantasmal Garden / Nabeshi, Tsukapro & Kitsuka',
+          id: 'YtWI2pb0C7o',//2022 NF3日目 20
+          description: `なんと、出演者による完全オリジナルのインスト曲です…！去年のNFで披露し、贅沢な空間を作り上げました。`,
+        },
+        {
+          title: 'Pale Blue / 米津玄師',
+          id: 'A1GFvRkHIDk',//2022 10月ライブ 03
+          description: `ストリングスのバイオリンやピアノにより、壮大な音の広がりに仕上がっています…！`,
+        },
+        {
+          title: 'カブトムシ / aiko',
+          id: 'H0-BIEn3AE4',//2022 クリスマスライブ 06
+          description: `『カブトムシ』は実は冬の曲らしく、去年のクリスマスライブで演奏されました。ボーカルとギター伴奏が織り成すハーモニーが魅力的です。`,
+        },
+        {
+          title: '愛を知るまでは / あいみょん',
+          id: 'F8ebVLHuZLg',//2022 NF4日目 09
+          description: `バンド演奏には珍しい鍵盤ハーモニカや、芯のある綺麗なボーカルのアカペラパートなどが見所です！`,
+        },
+        {
+          title: '17 / TOMOO',
+          id: '',//2023 2月ライブ 05
+          description: ``,
         },
         {
           title: '夏夜のマジック / indigo la End',
-          id: '0fnIGAKDofw',//2018 NF3日目 15:00 35
-          description: `しっとりとしたアコギの音色を中心にアンプラらしさが伝わってきます！`,
+          id: 'KWGdlnkFIgY',//2022 9月上旬ライブ 01
+          description: `アコギとピアノがアンプラらしい雰囲気を醸し出しています！`,
         },
         {
-          title: 'POP STAR / 平井堅',
-          id: 'Tc1iQDfY9vo',//2019 卒業ライブ 14
-          description: `平井堅の名曲をカバー！スラップベースなどのハイレベルな演奏に注目です！！`,
-        },
-        {
-          title: 'Sing / Goose house',
-          id: 'FHNdK0cV10g',//2019 6月ライブ 7
-          description: `Goose houseの代表曲を歌うま達が見事にカバー！これぞアンプラ！`,
-        },
-        {
-          title: '今、咲き誇る花たちよ / コブクロ',
-          id: 'B_nsyqAKmlI',//2019 9月ライブ 1
-          description: `フルートとリコーダーのハーモニーにぜひ注目してください！`,
-        },
-        {
-          title: 'Never Ending World / SEKAI NO OWARI',
-          id: 'dAErc5htcVQ',//2019 9月ライブ 7
-          description: `弦楽器3本をいれた豪華編成でセカオワの曲を演奏しています！`,
-        },
-        {
-          title: 'ダンスロボットダンス / ナユタン星人',
-          id: '_YIwKWJXUqo',//2019 10月ライブ 1
-          description: `アンプラでボカロは難しい…と思いきや、実は人気ジャンル！
-                        ナユタン星人の曲をかっこよくアレンジしています！`,
-        },
-        {
-          title: '赤いスイートピー / 松田聖子',
-          id: 'ywpIHjFnz90',//2019 10月ライブ 5
-          description: `ボーカル、ピアノ、ギターの少人数編成が映える松田聖子の大ヒット曲です`,
+          title: 'ニア / 松田聖子',
+          id: 'oeA6X8_QdmE',//2022 6月ライブ 01
+          description: `アンプラではボカロ曲も演奏されます！アンプラグドな楽器編成でもできるように上手くアレンジしています。`,
         },
       ],
     }
