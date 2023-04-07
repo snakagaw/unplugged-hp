@@ -73,7 +73,7 @@ export default {
         },
         {
           title: '君がくれた夏 / 家入レオ',
-          id: 'V-c0FVH9uvX00',//2022 NF4日目 13
+          id: 'c0FVH9uvX00',//2022 NF4日目 13
           description: `アコギが良く似合う家入レオの一曲です。`,
         },
         {
