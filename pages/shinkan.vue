@@ -5,7 +5,7 @@
     <p>
       2023年度の新歓はTwitterやLINEオープンチャットを用いて連絡しています。<br>
       オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここから</a>!!<br>
-      Twitterの質問箱でも質問を募集しています!連絡をお待ちしています!
+      Twitterの質問箱でも質問を募集しています!連絡をお待ちしています!<br>
       公式アカウント→
       <a
         class="twitter-follow-button"
@@ -13,8 +13,7 @@
         data-show-count="false"
         data-lang="ja"
         data-size="large"
-      >@kyodaiunpluggedをフォロー</a>
-      
+      >@kyodaiunpluggedをフォロー</a><br>
       2023新歓アカウント→
       <a
         class="twitter-follow-button"
