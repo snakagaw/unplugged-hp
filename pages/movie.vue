@@ -66,7 +66,6 @@ export default {
           id: 'hlYt0850oC8',//2022 NF4日目 11
           description: `洋楽、テイラー・スウィフトの楽曲もカッコ良く歌い上げています！`,
         },
-      nTdeDE_Ft9o
           title: 'ベルベットの詩 / back number',
           id: 'nTdeDE_Ft9o',//2022 NF4日目 07
           description: `映画の主題歌にもなったback numberの楽曲を去年のNFで演奏しました！`,
@@ -114,7 +113,7 @@ export default {
         {
           title: '17 / TOMOO',
           id: '',//2023 2月ライブ 05
-          description: ``,
+          description: `最近来ているアーティストTOMOOさんです。アンプラらしい選曲だと思います。流行らせたい曲をやることでみんなに聞いてもらいましょ〜!!`,
         },
         {
           title: '夏夜のマジック / indigo la End',
@@ -122,7 +121,7 @@ export default {
           description: `アコギとピアノがアンプラらしい雰囲気を醸し出しています！`,
         },
         {
-          title: 'ニア / 松田聖子',
+          title: 'ニア / 夏代孝明',
           id: 'oeA6X8_QdmE',//2022 6月ライブ 01
           description: `アンプラではボカロ曲も演奏されます！アンプラグドな楽器編成でもできるように上手くアレンジしています。`,
         },
