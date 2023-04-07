@@ -4,8 +4,26 @@
     <h2>2023年度の新歓について</h2>
     <p>
       2023年度の新歓はTwitterやLINEオープンチャットを用いて連絡しています。<br>
-      オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここ</a>から!!<br>
+      オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここから</a>!!<br>
       Twitterの質問箱でも質問を募集しています!連絡をお待ちしています!
+      公式アカウント→
+      <a
+        class="twitter-follow-button"
+        href="https://twitter.com/kyodaiunplugged"
+        data-show-count="false"
+        data-lang="ja"
+        data-size="large"
+      >@kyodaiunpluggedをフォロー</a>
+      
+      2023新歓アカウント→
+      <a
+        class="twitter-follow-button"
+        href="https://twitter.com/unplugged2023"
+        data-show-count="false"
+        data-lang="ja"
+        data-size="large"
+      >@unplugged2023をフォロー</a>
+      
     </p>
     
     <h2>新歓ビラ2023</h2>
@@ -15,8 +33,7 @@
     
     <h2>ライブ動画</h2>
     <p>
-      お待たせしました！<br>
-      アンプラで行われたライブのうち、いくつかを公開します！(2022年度のものです。)<br>
+      アンプラで行われたライブのうち、いくつかを公開します！<br>
       動画ページは<nuxt-link to="/movie">こちら</nuxt-link>！<br>
     </p>
     <h2>そのほか</h2>
