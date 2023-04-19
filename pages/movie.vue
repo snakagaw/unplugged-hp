@@ -117,14 +117,14 @@ export default {
           description: `アンプラではボカロ曲も演奏されます！アンプラグドな楽器編成でもできるように上手くアレンジしています。`,
         },
         {
-          title: '??? / ???',//青春病 / 藤井風
-          id: '',//2022 NF1日目
-          description: ``,
+          title: '青春病 / 藤井風',//青春病 / 藤井風
+          id: '73yAK3guTIw',//2022 NF1日目
+          description: `3人息ぴったりで藤井風を演奏しています。`,
         },
         {
-          title: '??? / ???',//17 / TOMOO
-          id: '',//2023 2月ライブ 05
-          description: ``,
+          title: '17 / TOMOO',//17 / TOMOO
+          id: 'E1by_B061AM',//2023 2月ライブ 05
+          description: `最近アンプラで話題のアーティストTOMOOです。この機会にぜひTOMOOに触れてください！`,
         },       
       ],
     }
