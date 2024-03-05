@@ -9,6 +9,8 @@ function markdownFileToURL(filename) {
   return filename.toString().replace(regex, "$1/$2").toString()
 }
 
-export default ({}, inject) => {
-  inject('markdownFileToURL', markdownFileToURL);
-}
+export default defineNuxtPlugin(nuxtApp => {
+  return {
+    markdownFileToURL: (filename) => markdownFileToURL(filename)
+  }
+})

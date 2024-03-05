@@ -11,21 +11,21 @@
       </ul>
     </div>
     <div>
-      <b-navbar toggleable="lg">
-        <b-navbar-brand to="/">
+      <div class="navbar toggleable-lg">
+        <a class="navbar-brand" href="/">
           <img
             class="brand"
             src="~assets/brand_icon.png"
             alt="京大アンプラグド"
             width="240"
           />
-        </b-navbar-brand>
+        </a>
 
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <a class="b-navbar-toggle" target="nav-collapse"></a>
 
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item to="/">
+        <div class="collapse" id="nav-collapse" is-nav>
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item" to="/">
               <div class="mx-auto" style="width: 120px;">
                 <img
                   src="~/assets/nav_images/home_sp.gif"
@@ -38,8 +38,8 @@
                   alt="ホーム"
                 />
               </div>
-            </b-nav-item>
-            <b-nav-item to="/shinkan">
+            </a>
+            <div class="nav-item" to="/shinkan">
               <div class="mx-auto" style="width: 120px;">
                 <img
                   src="~/assets/nav_images/special_sp.gif"
@@ -52,8 +52,8 @@
                   alt="新歓特設"
                 />
               </div>
-            </b-nav-item>
-            <b-nav-item to="/about">
+            </div>
+            <div class="nav-item" to="/about">
               <div class="mx-auto" style="width: 120px;">
                 <img
                   src="~/assets/nav_images/about_sp.gif"
@@ -66,8 +66,8 @@
                   alt="サークル紹介"
                 />
               </div>
-            </b-nav-item>
-            <b-nav-item to="/members">
+          </div>
+            <div class="nav-item" to="/members">
               <div class="mx-auto" style="width: 120px;">
                 <img
                   src="~/assets/nav_images/members_sp.gif"
@@ -80,8 +80,8 @@
                   alt="会員"
                 />
               </div>
-            </b-nav-item>
-            <b-nav-item to="/links">
+            </div>
+            <div class="nav-item" to="/links">
               <div class="mx-auto" style="width: 120px;">
                 <img
                   src="~/assets/nav_images/links_sp.gif"
@@ -94,10 +94,10 @@
                   alt="リンク"
                 />
               </div>
-            </b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar>
+            </div>
+          </div>
+          </div>
+      </div>
     </div>
   </div>
 </template>
@@ -105,7 +105,7 @@
 .top {
   height: 25px;
   width: 100%;
-  background: url('~assets/images/top-background.gif') repeat center;
+  background: url('~/assets/images/top-background.gif') repeat center;
 }
 
 .top ul {
@@ -117,7 +117,7 @@
 .top li {
   float: right;
   height: inherit;
-  list-style-image: url('~assets/images/icon-dot.gif');
+  list-style-image: url('~/assets/images/icon-dot.gif');
   list-style-position: inside;
   margin-left: 20px;
   margin-right: 10px;

@@ -29,11 +29,25 @@
         data-lang="ja"
         data-size="large"
       >@kyodaiunpluggedをフォロー</a>
-      <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charset="utf-8"
-      ></script>
     </p>
   </div>
 </template>
+<script setup>
+useHead({
+  script:{
+    type: "text/javascript",
+    innerHTML: `!(function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0],
+          p = 'https'
+        if (!d.getElementById(id)) {
+          js = d.createElement(s)
+          js.id = id
+          js.src = p + '://platform.twitter.com/widgets.js'
+          fjs.parentNode.insertBefore(js, fjs)
+        }
+      })(document, 'script', 'twitter-wjs')`,
+    tagPriority: 4
+  }
+})
+</script>

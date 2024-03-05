@@ -1,6 +1,6 @@
-import allPosts from './plugins/allPosts.js';
-import years from './plugins/years.js';
-import categories from './plugins/categories.js';
+import allPosts from './plugins/posts/allPosts.js';
+import years from './plugins/posts/years.js';
+import categories from './plugins/posts/categories.js';
 
 const generateDynamicRoutes = callback => {
   var routes = [];
@@ -17,7 +17,7 @@ const generateDynamicRoutes = callback => {
 };
 
 // 設定. デフォのを読み込んでる.
-export default {
+export default defineNuxtConfig ({
   ssr: true,
   /*
    ** Headers of the page
@@ -71,25 +71,7 @@ export default {
    ** Customize the progress-bar color
    */
   loading: {color: '#fff'},
-  /*
-   ** Global CSS
-   */
-  css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: ['~/plugins/categoriesDI.js', '~/plugins/yearsDI.js'],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
-    '@nuxtjs/markdownit',
-    '@nuxtjs/axios',
-    '@nuxtjs/moment',
-    'nuxt-fontawesome',
-  ],
+  
   /*
    ** Build configuration
    */
@@ -99,32 +81,7 @@ export default {
      */
     extend (config, ctx) {},
   },
-  markdownit: {
-    preset: 'default',
-    injected: true,
-    breaks: true,
-    html: true,
-    linkify: true,
-    typography: true,
-    xhtmlOut: true,
-    langPrefix: 'language-',
-    quotes: '“”‘’',
-    highlight: function (/*str, lang*/) {
-      return '';
-    },
-  },
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas'],
-      },
-    ],
-  },
-  moment: {
-    locales: ['ja'],
-  },
   generate: {
     routes: generateDynamicRoutes,
   },
-};
+});

@@ -1,52 +1,23 @@
 <template>
-  <b-container>
-    <unplugged-header />
+  <div class="container">
+    <AppHeader />
     <img
-      v-if="$nuxt.$route.name === 'index'"
-      src="~/assets/images/main.jpg"
+      src="~assets/images/main.jpg"
       style="width:100%"
     />
-    <b-row>
-      <b-col md="8">
-        <nuxt />
-      </b-col>
-      <b-col md="4">
-        <unplugged-sidebar />
-      </b-col>
-    </b-row>
-    <unplugged-footer />
-  </b-container>
+    <div class="row">
+      <div class="col-8">
+        <slot /> 
+      </div>
+      <div class="col-4">
+        <Sidebar />
+      </div>
+    </div>
+    <AppFooter />
+  </div>
 </template>
-<script>
-import unpluggedHeader from '~/components/header.vue'
-import unpluggedFooter from '~/components/footer.vue'
-import unpluggedSidebar from '~/components/sidebar.vue'
-import moment from 'moment'
+<script setup>
 
-export default {
-  components: {
-    unpluggedHeader,
-    unpluggedFooter,
-    unpluggedSidebar
-  },
-  data: function() {
-    return {
-      room: ''
-    }
-  },
-  created: function() {
-    this.$axios
-      .$get('https://message.ku-unplugged.net/api/meeting_room/today/')
-      .then(res => {
-        this.room = res.room == null ? "終日使用不可" : res.room
-      })
-  },
-  filters: {
-    md: function(date) {
-      return moment(date).format('MM/DD')
-    }
-  }
-}
 </script>
 <style>
 .container {
@@ -62,7 +33,7 @@ h1 {
   padding-left: 35px;
   padding-bottom: 10px;
   border-bottom: 3px dotted #fd9e00;
-  background: url('~assets/images/h1-arrow.gif') left top no-repeat;
+  background: url('../assets/images/h1-arrow.gif') left top no-repeat;
   color: #463100;
   font-size: 1.6em;
   /* letter-spacing: 0.25em; */

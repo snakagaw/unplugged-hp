@@ -1,10 +1,10 @@
 <template>
   <div class="footer">
-    <b-container class="text-center">
-      <b-row>
-        <b-col>©︎ 2023 京大アンプラグド</b-col>
-      </b-row>
-    </b-container>
+    <div class="container text-center">
+      <div class="row">
+        <div calss="col">©︎ 2023 京大アンプラグド</div>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -39,22 +39,5 @@ ul a {
   padding: 0;
 }
 </style>
-<script>
-import allPosts from '~/plugins/allPosts.js'
-export default {
-  data: function() {
-    return {
-      allPosts: allPosts,
-      selectedYear: null
-    }
-  },
-  watch: {
-    selectedYear(value) {
-      if (value !== null) {
-        this.$router.push('/years/' + value)
-        this.selectedYear = null
-      }
-    }
-  }
-}
+<script setup>
 </script>

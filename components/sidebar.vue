@@ -11,11 +11,6 @@
             href="https://twitter.com/kyodaiunplugged?ref_src=twsrc%5Etfw"
             >Tweets by kyodaiunplugged</a
           >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
         </div>
       </li>
     </ul>
@@ -50,34 +45,5 @@ ul {
   padding-left: 20px;
 }
 </style>
-<script>
-import allPosts from '~/plugins/allPosts.js'
-import moment from 'moment'
-export default {
-  data: function() {
-    return {
-      allPosts: allPosts,
-      todayRoom: '',
-      today: '',
-      yesterdayRoom: '',
-      yesterday: ''
-    }
-  },
-  created: function() {
-    this.$axios
-      .$get('https://message.ku-unplugged.net/api/meeting_room/today/')
-      // .$get('http://localhost:8000/api/meeting_room/today/')
-      .then(res => {
-        this.todayRoom = res.room == null ? "終日使用不可" : res.room
-        this.today = res.date
-        this.yesterday = res['date-before']
-        this.yesterdayRoom = res['room-before']
-      })
-  },
-  filters: {
-    md: function(date) {
-      return moment(date).format('M/D')
-    }
-  }
-}
+<script setup>
 </script>

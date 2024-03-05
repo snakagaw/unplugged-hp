@@ -13,21 +13,5 @@
     </p>
   </div>
 </template>
-<script>
-import allPosts from '~/plugins/allPosts.js'
-export default {
-  data() {
-    return {
-      posts: allPosts,
-      str: ''
-    }
-  },
-  computed: {
-    searchResult() {
-      return this.posts.filter(post => {
-        return post.title.match(this.str) || post.text.match(this.str)
-      })
-    }
-  }
-}
+<script setup>
 </script>

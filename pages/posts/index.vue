@@ -7,13 +7,5 @@
     </ul>
   </div>
 </template>
-<script>
-import allPosts from '~/plugins/allPosts.js'
-export default {
-  data() {
-    return {
-      posts: allPosts
-    }
-  }
-}
+<script setup>
 </script>
