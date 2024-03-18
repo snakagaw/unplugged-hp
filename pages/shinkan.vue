@@ -4,9 +4,7 @@
     <h2>2024年度の新歓について</h2>
     <p>
       2024年度の新歓については少々お待ちください!!<br>
-      // オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここから</a>!!<br>
-      // Twitterの質問箱でも質問を募集しています!連絡をお待ちしています!<br>
-      公式アカウント→
+      X公式アカウント→
       <a
         class="twitter-follow-button"
         href="https://twitter.com/kyodaiunplugged"
@@ -36,7 +34,7 @@
     <p>
       お問い合わせの方は<a href="mailto:info@ku-unplugged.net">メール(info@ku-unplugged.net)</a><br>
       <br>
-      又はtwitter[DM] までお気軽に連絡して下さい!<br>
+      又はX（旧Twitter）[DM] までお気軽に連絡して下さい!<br>
       <a
         class="twitter-follow-button"
         href="https://twitter.com/kyodaiunplugged"
