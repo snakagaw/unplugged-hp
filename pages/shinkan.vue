@@ -1,11 +1,11 @@
 <template>
   <div class="main">
     <h1>新歓特設ページ</h1>
-    <h2>2023年度の新歓について</h2>
+    <h2>2024年度の新歓について</h2>
     <p>
-      2023年度の新歓はTwitterやLINEオープンチャットを用いて連絡しています。<br>
-      オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここから</a>!!<br>
-      Twitterの質問箱でも質問を募集しています!連絡をお待ちしています!<br>
+      2024年度の新歓については少々お待ちください!!<br>
+      // オープンチャットに参加の場合は<a href="https://forms.gle/WNJ2nkBTwQC4Prcx7">ここから</a>!!<br>
+      // Twitterの質問箱でも質問を募集しています!連絡をお待ちしています!<br>
       公式アカウント→
       <a
         class="twitter-follow-button"
@@ -14,18 +14,15 @@
         data-lang="ja"
         data-size="large"
       >@kyodaiunpluggedをフォロー</a><br>
-      2023新歓アカウント→
-      <a
-        class="twitter-follow-button"
-        href="https://twitter.com/unplugged2023"
-        data-show-count="false"
-        data-lang="ja"
-        data-size="large"
-      >@unplugged2023をフォロー</a>
       
     </p>
     
-    <h2>新歓ビラ2023</h2>
+    <h2>新歓ビラ2024</h2>
+    <p>
+      coming soon...!!
+    </p>
+
+    <h2>新歓ビラ2023（前年度）</h2>
     <p>
       <img src="/uploads/2023_flyer.jpg" alt="" title="新歓ビラ2023" class="img-fluid" />
     </p>
