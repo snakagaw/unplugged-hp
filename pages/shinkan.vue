@@ -23,7 +23,7 @@
     </p>
     <p>
       その他、他団体とのコラボライブもあります！ 詳しくは公式SNSをチェック↓<br>
-      新監特設Xアカウント→
+      新歓特設Xアカウント→
       <a
         class="twitter-follow-button"
         href="https://twitter.com/unplugged2024"
@@ -31,7 +31,7 @@
         data-lang="ja"
         data-size="large"
       >@unplugged2024</a><br>
-      新刊特設Instagramアカウント→
+      新歓特設Instagramアカウント→
       <a href="https://www.instagram.com/unplugged_kyodai2024/">@unplugged_kyodai2024</a><br>
     </p>
     <h2>ライブ動画</h2>
