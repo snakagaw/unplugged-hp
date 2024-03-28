@@ -65,6 +65,10 @@ export default {
         sizes: '180x180',
         href: '/apple-touch-icon.png',
       },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      },
     ],
   },
   /*

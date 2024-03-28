@@ -17,6 +17,7 @@
     <unplugged-footer />
   </b-container>
 </template>
+
 <script>
 import unpluggedHeader from '~/components/header.vue'
 import unpluggedFooter from '~/components/footer.vue'
@@ -48,6 +49,7 @@ export default {
   }
 }
 </script>
+
 <style>
 .container {
   padding: 0px;
@@ -67,7 +69,7 @@ h1 {
   font-size: 1.6em;
   /* letter-spacing: 0.25em; */
   font-weight: bold;
-  font-family: 'ＭＳ Ｐ明朝', serif;
+  font-family: "Noto Sans JP", sans-serif;;
 }
 h2 {
   clear: both;
@@ -80,12 +82,13 @@ h2 {
   border-bottom: 1px solid #ffeeaa;
   font-size: 1.286em;
   font-weight: bold;
-  font-family: 'ＭＳ Ｐ明朝', serif;
+  font-family: "Noto Sans JP", sans-serif;;
 }
 p {
   margin-left: 20px;
   margin-right: 10px;
   margin-bottom: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
 }
 a {
   text-decoration: underline;
@@ -93,5 +96,8 @@ a {
 }
 a:hover {
   color: #fd9e00;
+}
+tr {
+  mergin: 1em;
 }
 </style>
