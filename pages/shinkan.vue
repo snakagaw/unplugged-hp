@@ -1,48 +1,54 @@
 <template>
   <div class="main">
     <h1>新歓特設ページ</h1>
-    <h2>2024年度の新歓について</h2>
+    <h2>2024年度新歓日程</h2>
     <p>
-      2024年度の新歓については少々お待ちください!!<br>
-      X公式アカウント→
+      2024年度の新歓は、以下のような日程で行います!
+    </p>
+    <p>
+      
+    <p>
+      <img src="/uploads/2024_calendar.jpg" alt="" title="新歓カレンダー2024" class="img-fluid" />
+    </p>
+
+    <h2>新歓イベント</h2>
+    <p>
+      今年の京大アンプラグドでは、以下の新歓イベントを開催します！
+    </p>
+    <p>
+      新歓ライブ @4共・学生集会所3階 … アンプラグドの会員による演奏を披露します！<br>
+      楽器交流会 @4共 … 先輩達に教えてもらいながら、楽器を体験できます！<br>
+      花見 @鴨川 … 音楽を楽しみながら、楽しくお花見をしましょう！<br>
+      ビラ配り @クスノキ前 … 紅萠祭のビラロードでビラ配りをします！<br>
+    </p>
+    <p>
+      その他、他団体とのコラボライブもあります！ 詳しくは公式SNSをチェック↓<br>
+      新監特設Xアカウント→
       <a
         class="twitter-follow-button"
-        href="https://twitter.com/kyodaiunplugged"
+        href="https://twitter.com/unplugged2024"
         data-show-count="false"
         data-lang="ja"
         data-size="large"
-      >@kyodaiunpluggedをフォロー</a><br>
-      
+      >@unplugged2024</a><br>
+      新刊特設Instagramアカウント→
+      <a href="https://www.instagram.com/unplugged_kyodai2024/">@unplugged_kyodai2024</a><br>
     </p>
-    
-    <h2>新歓ビラ2024</h2>
-    <p>
-      coming soon...!!
-    </p>
-
-    <h2>新歓ビラ2023（前年度）</h2>
-    <p>
-      <img src="/uploads/2023_flyer.jpg" alt="" title="新歓ビラ2023" class="img-fluid" />
-    </p>
-    
     <h2>ライブ動画</h2>
     <p>
-      アンプラで行われたライブのうち、いくつかを公開します！<br>
+      アンプラグドで過去に行われたライブのうち、いくつかを公開しています！<br>
       動画ページは<nuxt-link to="/movie">こちら</nuxt-link>！<br>
     </p>
-    <h2>そのほか</h2>
+    <h2>お問い合わせ</h2>
     <p>
-      お問い合わせの方は<a href="mailto:info@ku-unplugged.net">メール(info@ku-unplugged.net)</a><br>
-      <br>
-      又はX（旧Twitter）[DM] までお気軽に連絡して下さい!<br>
-      <a
-        class="twitter-follow-button"
-        href="https://twitter.com/kyodaiunplugged"
-        data-show-count="false"
-        data-lang="ja"
-        data-size="large"
-      >@kyodaiunpluggedをフォロー</a>
-
+      何か気になることがある方は
+      <a href="mailto:info@ku-unplugged.net">メール(info@ku-unplugged.net)</a>
+      、又は
+      <a href="https://twitter.com/unplugged2024">X（旧Twitter）</a>
+      ・
+      <a href="https://instagram.com/unplugged_kyodai2024/">instagram</a>
+      のDMまでお気軽に連絡して下さい!<br>
+      
     </p>
       <script>
       !(function(d, s, id) {
