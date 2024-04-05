@@ -2,13 +2,13 @@
   <div class="sidebar">
     <ul>
       <li class="sidebar-item">
-        <h3>twitter</h3>
+        <h3>新歓特設X</h3>
         <div>
           <a
             class="twitter-timeline"
             data-height="400"
             data-theme="light"
-            href="https://twitter.com/kyodaiunplugged?ref_src=twsrc%5Etfw"
+            href="https://twitter.com/unplugged2024"
             >Tweets by kyodaiunplugged</a
           >
           <script
