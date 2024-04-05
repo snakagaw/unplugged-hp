@@ -1,6 +1,11 @@
 <template>
   <div class="main">
     <h1>新歓特設ページ</h1>
+    <p>
+      <b>※新歓に参加される方は、
+      <a href="https://forms.gle/ntiKuQe8pS1hK4sg7">こちら</a>
+      のフォームに回答してLINEオープンチャットに参加してください！</b>
+    </p>
     <h2>2024年度新歓日程</h2>
     <p>
       2024年度の新歓は、以下のような日程で行います!<br>
