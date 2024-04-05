@@ -9,7 +9,7 @@
             data-height="400"
             data-theme="light"
             href="https://twitter.com/unplugged2024"
-            >Tweets by kyodaiunplugged</a
+            >Tweets by unplugged2024</a
           >
           <script
             async
