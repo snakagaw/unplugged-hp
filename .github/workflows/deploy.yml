@@ -60,9 +60,7 @@ jobs:
           path: ./dist
           
       - name: confirm dist
-        run: |
-          ls
-          cat dist
+        run: ls
         
       - name: zip
         run: zip -r dist.zip ./dist
