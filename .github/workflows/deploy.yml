@@ -12,9 +12,9 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: "14.x"
 
@@ -26,7 +26,7 @@ jobs:
 
       - name: Cache dependencies
         id: cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: "node_modules"
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -43,7 +43,7 @@ jobs:
           yarn run generate
 
       - name: upload dist
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
@@ -54,7 +54,7 @@ jobs:
     if: github.event.ref == 'refs/heads/master'
     steps:
       - name: download dist
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: dist
 
@@ -63,7 +63,7 @@ jobs:
 
       - name: Create Release
         id: create_release
-        uses: actions/create-release@v1
+        uses: actions/create-release@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -74,7 +74,7 @@ jobs:
 
       - name: Upload Release Asset
         id: upload-release-asset
-        uses: actions/upload-release-asset@v1.0.1
+        uses: actions/upload-release-asset@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
