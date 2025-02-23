@@ -57,7 +57,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: dist
-
+          
+      - name: confirm dist
+        run: |
+          ls
+          cat dist
+        
       - name: zip
         run: zip -r dist.zip dist
 
