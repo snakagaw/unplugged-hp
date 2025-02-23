@@ -59,7 +59,7 @@ jobs:
           name: dist
 
       - name: zip
-        run: zip -r dist.zip ./dist
+        run: zip -r dist.zip /home/runner/work/unplugged-hp/unplugged-hp/dist
 
       - name: Trigger Webhook to CoreServer
         run: curl https://ku-unplugged.net/deploy.php?token=${{ secrets.CORESERVER_DEPLOY_KEY }}
