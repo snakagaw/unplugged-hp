@@ -10,7 +10,6 @@
     <p>
       2025年度の新歓は準備中です。今しばらくお待ちください！<br>
     </p>
-    <p>
       
     <p>
       <img src="/uploads/2024_calendar.jpg" alt="" title="新歓カレンダー2024" class="img-fluid" />
