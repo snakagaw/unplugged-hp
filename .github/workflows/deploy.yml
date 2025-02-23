@@ -59,7 +59,7 @@ jobs:
           name: dist
 
       - name: zip
-        run: zip -r dist.zip ./dist
+        run: zip -r dist.zip . -i ./dist
 
       - name: Create Release
         id: create_release
