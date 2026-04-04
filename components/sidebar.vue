@@ -8,8 +8,8 @@
             class="twitter-timeline"
             data-height="400"
             data-theme="light"
-            href="https://twitter.com/unplugged2024"
-            >Tweets by unplugged2024</a
+            href="https://x.com/KUunplugged2026"
+            >Tweets by KUunplugged2026</a
           >
           <script
             async
