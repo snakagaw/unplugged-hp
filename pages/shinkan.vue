@@ -6,14 +6,9 @@
       <a href="https://forms.gle/ntiKuQe8pS1hK4sg7">こちら</a>
       のフォームに回答してLINEオープンチャットに参加してください！</b>
     </p>
-    <h2>2025年度新歓日程</h2>
+    <h2>2026年度新歓日程</h2>
     <p>
-      2025年度の新歓は準備中です。今しばらくお待ちください！<br>
-      2024年度の新歓情報を掲載しております。<br>
-    </p>
-      
-    <p>
-      <img src="/uploads/2024_calendar.jpg" alt="" title="新歓カレンダー2024" class="img-fluid" />
+      <img src="/uploads/2026shinkan_calender.jpg" alt="" title="新歓カレンダー2026" class="img-fluid" />
     </p>
 
     <h2>2024年度新歓イベント</h2>
