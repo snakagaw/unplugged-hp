@@ -2,7 +2,7 @@
   <div class="footer">
     <b-container class="text-center">
       <b-row>
-        <b-col>©︎ 2023 京大アンプラグド</b-col>
+        <b-col>©︎ 2026 京大アンプラグド</b-col>
       </b-row>
     </b-container>
   </div>
