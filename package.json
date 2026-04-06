@@ -19,7 +19,7 @@
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/moment": "^1.6.0",
     "bootstrap-vue": "^2.13.0",
-    "nuxt": "^2.12.2",
+    "nuxt": "^3.12.4",
     "nuxt-fontawesome": "^0.4.0",
     "processmd": "^4.5.0"
   },
